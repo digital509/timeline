@@ -22,7 +22,17 @@
         <div id="events"></div>
       </div>
     </div>
-    <p class="hint-scroll">Scroll the line of years →</p>
+    <p class="hint-scroll">
+      <span class="hint-desktop">Scroll the line of years →</span>
+      <span class="hint-compact">Scroll the years · tap a disk</span>
+    </p>
+  </div>
+  <div id="sheet" class="sheet" aria-hidden="true">
+    <button type="button" class="sheet-backdrop" aria-label="Close details"></button>
+    <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <button type="button" class="sheet-close" aria-label="Close">Close</button>
+      <div id="sheet-content"></div>
+    </div>
   </div>
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
