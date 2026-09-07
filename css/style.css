@@ -238,9 +238,16 @@ body::before {
     width: var(--node);
     margin-left: calc(var(--node) / -2);
   }
-  .event .caption { display: none; }
+  .event .caption {
+    display: block;
+    font-size: 10px;
+    max-width: 7.2em;
+    letter-spacing: 0.02em;
+  }
   .event.up { padding-bottom: 12px; }
   .event.down { padding-top: 12px; }
+  .event.up .caption { margin-bottom: 4px; }
+  .event.down .caption { margin-top: 4px; }
   .hint-desktop { display: none; }
   .hint-compact { display: inline; }
 }

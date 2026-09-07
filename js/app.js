@@ -3,7 +3,8 @@
   const YEAR1 = 325;
   const PAD = 140;
   const PX_MIN = 8;
-  const PX_MAX = 48;
+  const PX_MAX_DESKTOP = 48;
+  const PX_MAX_COMPACT = 84;
   const PX_DEFAULT = 18;
 
   const eventsEl = document.getElementById("events");
@@ -19,6 +20,10 @@
 
   function isCompact() {
     return window.matchMedia("(max-width: 720px)").matches;
+  }
+
+  function pxMax() {
+    return isCompact() ? PX_MAX_COMPACT : PX_MAX_DESKTOP;
   }
 
   function xOf(year) {
@@ -210,8 +215,9 @@
   function layout() {
     const compact = isCompact();
     const minGap = compact ? 56 : 100;
-    const stem0 = compact ? 14 : 16;
-    const stemStep = compact ? 58 : 100;
+    const stem0 = compact ? 16 : 16;
+    const stemStep = compact ? 76 : 100;
+    if (pxPerYear > pxMax()) pxPerYear = pxMax();
     assignLevels(minGap, compact ? 4 : 3);
 
     const width = PAD * 2 + (YEAR1 - YEAR0) * pxPerYear;
@@ -255,7 +261,7 @@
   }
 
   function zoomAt(clientX, nextPx) {
-    const clamped = Math.min(PX_MAX, Math.max(PX_MIN, nextPx));
+    const clamped = Math.min(pxMax(), Math.max(PX_MIN, nextPx));
     if (Math.abs(clamped - pxPerYear) < 0.04) return;
     const rect = scroller.getBoundingClientRect();
     const xInView = clientX - rect.left;
