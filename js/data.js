@@ -36,9 +36,9 @@ window.EVENTS = [
     account: "Acts 10: a centurion at Caesarea, a vision of unclean animals, and Peter’s word, “God has shown me that I should not call any person common or unclean.” While he is still speaking, the Holy Spirit falls on all who hear, and they are baptized. Acts 11: Peter defends the baptism before the circumcision party in Jerusalem. The Gentile mission in Acts begins with one of the Twelve, in a Roman house, before Paul’s journeys and before Galatians.",
     sources: ["Acts 10–11:18"] },
 
-  { year: 43, label: "c. 42–44", title: "Barnabas and Saul at Antioch", short: "Antioch", image: "assets/author-paul.jpg",
-    summary: "Barnabas fetches Saul from Tarsus. They teach a year at Antioch; the disciples are first called Christians.",
-    account: "Acts 11:19–26: the scattered preach as far as Antioch. The church in Jerusalem sends Barnabas; he sees the grace of God, goes to Tarsus for Saul, and they remain a whole year with the church. “In Antioch the disciples were first called Christians.” This is the base from which the first missionary journey will be sent, and the city where Paul will later oppose Cephas to his face.",
+  { year: 43, label: "c. 42–44", title: "Barnabas and Paul at Antioch", short: "Antioch", image: "assets/author-paul.jpg",
+    summary: "Barnabas fetches Paul from Tarsus. They teach a year at Antioch; the disciples are first called Christians.",
+    account: "Acts 11:19–26: the scattered preach as far as Antioch. The church in Jerusalem sends Barnabas; he sees the grace of God, goes to Tarsus for Paul, and they remain a whole year with the church. “In Antioch the disciples were first called Christians.” This is the base from which the first missionary journey will be sent, and the city where Paul will later oppose Cephas to his face.",
     sources: ["Acts 11:19–26"] },
 
   { year: 44, label: "44", title: "James son of Zebedee killed", short: "James Zebedee", image: "assets/ev-sword.jpg",
@@ -47,14 +47,14 @@ window.EVENTS = [
     sources: ["Acts 12:1–2", "Josephus, Antiquities 19.343–352"] },
 
   { year: 46, label: "c. 46", title: "Relief to Jerusalem", short: "Famine visit", image: "assets/author-paul.jpg",
-    summary: "Barnabas and Saul take famine relief from Antioch to the elders in Jerusalem. Josephus independently records a great famine in the city under Claudius.",
-    account: "Acts 11:27–30: Agabus foretells a famine in the days of Claudius. The disciples at Antioch send relief to the brothers in Judea by the hand of Barnabas and Saul. Josephus, Antiquities 20.51–53 and 20.101, describes the same Claudian famine at Jerusalem: many died for want; Queen Helena of Adiabene bought grain from Egypt and figs from Cyprus and distributed them, and her son Izates sent money to the principal men of the city. He does not mention the church at Antioch. On the South Galatian reading, Galatians 2:1–10 is this visit: after fourteen years Paul goes up with Barnabas and Titus, lays his gospel privately before those of repute — James, Cephas, and John — and they give the right hand of fellowship. Others read Galatians 2 as the council of Acts 15.",
+    summary: "Barnabas and Paul take famine relief from Antioch to the elders in Jerusalem. Josephus independently records a great famine in the city under Claudius.",
+    account: "Acts 11:27–30: Agabus foretells a famine in the days of Claudius. The disciples at Antioch send relief to the brothers in Judea by the hand of Barnabas and Paul. Josephus, Antiquities 20.51–53 and 20.101, describes the same Claudian famine at Jerusalem: many died for want; Queen Helena of Adiabene bought grain from Egypt and figs from Cyprus and distributed them, and her son Izates sent money to the principal men of the city. He does not mention the church at Antioch. On the South Galatian reading, Galatians 2:1–10 is this visit: after fourteen years Paul goes up with Barnabas and Titus, lays his gospel privately before those of repute — James, Cephas, and John — and they give the right hand of fellowship. Others read Galatians 2 as the council of Acts 15.",
     sources: ["Acts 11:27–30", "Josephus, Antiquities 20.51–53; 20.101", "Galatians 2:1–10"],
     caveat: "Galatians 2:1–10 is either this famine visit or the council of Acts 15. Both meetings are in the narrative; the letter does not name which calendar year." },
 
   { year: 47, label: "c. 46–48", title: "First missionary journey", short: "Cyprus · Galatia", image: "assets/ev-ship.jpg",
-    summary: "The Spirit sends Barnabas and Saul from Antioch. Cyprus, then the Galatian cities: Pisidian Antioch, Iconium, Lystra, Derbe.",
-    account: "Acts 13–14: at Antioch the Spirit says, “Set apart for me Barnabas and Saul.” They preach across Cyprus before Sergius Paulus the proconsul, then sail to Perga, where John Mark leaves them. In Pisidian Antioch, Iconium, Lystra, and Derbe they plant churches among Jews and Gentiles and appoint elders on the way back. These are the churches of Galatia to which Paul will write. He returns to Syrian Antioch and reports what God has done.",
+    summary: "The Spirit sends Barnabas and Paul from Antioch. Cyprus, then the Galatian cities: Pisidian Antioch, Iconium, Lystra, Derbe.",
+    account: "Acts 13–14: at Antioch the Spirit says, “Set apart for me Barnabas and Saul.” From Cyprus onward Luke writes “Paul” (13:9). They preach before Sergius Paulus the proconsul, then sail to Perga, where John Mark leaves them. In Pisidian Antioch, Iconium, Lystra, and Derbe they plant churches among Jews and Gentiles and appoint elders on the way back. These are the churches of Galatia to which Paul will write. He returns to Syrian Antioch and reports what God has done.",
     sources: ["Acts 13–14"] },
 
   { year: 47.7, label: "c. 48", title: "Peter at Antioch", short: "Cephas at Antioch", image: "assets/apostle-peter.jpg",
