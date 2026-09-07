@@ -1,8 +1,11 @@
 (function () {
   const YEAR0 = 30;
   const YEAR1 = 325;
-  const PX = 18;
   const PAD = 140;
+  const PX_MIN = 8;
+  const PX_MAX = 48;
+  const PX_DEFAULT = 18;
+
   const eventsEl = document.getElementById("events");
   const track = document.getElementById("track");
   const svg = document.getElementById("links");
@@ -10,12 +13,16 @@
   const sheet = document.getElementById("sheet");
   const sheetContent = document.getElementById("sheet-content");
 
+  let pxPerYear = PX_DEFAULT;
+  let items = [];
+  let layoutRaf = 0;
+
   function isCompact() {
     return window.matchMedia("(max-width: 720px)").matches;
   }
 
   function xOf(year) {
-    return PAD + (year - YEAR0) * PX;
+    return PAD + (year - YEAR0) * pxPerYear;
   }
 
   function sizeSvg() {
@@ -44,21 +51,20 @@
     });
   }
 
-  function placeEvents(compact) {
-    const minGap = compact ? 56 : 200;
+  function assignLevels(minGap, maxLevel) {
     const placed = [];
-    return EVENTS.map((ev, i) => {
-      const side = i % 2 === 0 ? "up" : "down";
-      const trueX = xOf(ev.year);
-      let x = trueX;
-      let level = 0;
-      if (compact) {
+    items
+      .slice()
+      .sort((a, b) => a.ev.year - b.ev.year)
+      .forEach((item) => {
+        const x = xOf(item.ev.year);
+        let level = 0;
         let bump = true;
         while (bump) {
           bump = false;
           for (let p = 0; p < placed.length; p++) {
             const other = placed[p];
-            if (other.side !== side || other.level !== level) continue;
+            if (other.side !== item.side || other.level !== level) continue;
             if (Math.abs(other.x - x) < minGap) {
               level += 1;
               bump = true;
@@ -66,21 +72,15 @@
             }
           }
         }
-      } else {
-        for (let p = 0; p < placed.length; p++) {
-          const other = placed[p];
-          if (other.side !== side) continue;
-          if (x - other.x < minGap) x = other.x + minGap;
-        }
-      }
-      const entry = { ev, i, side, x, trueX, level };
-      placed.push(entry);
-      return entry;
-    });
+        if (level > maxLevel) level = maxLevel;
+        item.x = x;
+        item.level = level;
+        placed.push(item);
+      });
   }
 
   function openSheet(ev) {
-    if (!ev || !sheet || !isCompact()) return;
+    if (!ev || !sheet) return;
     sheetContent.innerHTML = `
       <div class="sheet-source">
         <div class="sheet-head">
@@ -105,7 +105,6 @@
 
   function bindTap(node, ev) {
     const open = (e) => {
-      if (!isCompact()) return;
       e.preventDefault();
       e.stopPropagation();
       openSheet(ev);
@@ -116,24 +115,47 @@
     });
   }
 
+  function build() {
+    eventsEl.innerHTML = "";
+    items = [];
+    EVENTS.forEach((ev, i) => {
+      const side = i % 2 === 0 ? "up" : "down";
+      const node = document.createElement("div");
+      node.className = "event " + side;
+      node.tabIndex = 0;
+      node.setAttribute("role", "button");
+      node.setAttribute("aria-label", ev.title);
+      node.innerHTML = `
+        <div class="caption">${ev.short || ev.title}</div>
+        <div class="disk"><img src="${ev.image}" alt=""></div>`;
+      eventsEl.appendChild(node);
+      bindTap(node, ev);
+      items.push({ ev, i, side, node, disk: node.querySelector(".disk") });
+    });
+  }
+
+  function yearMarks() {
+    if (pxPerYear < 11) return [50, 100, 200, 325];
+    if (pxPerYear < 22) return [33, 50, 70, 100, 150, 200, 250, 300, 325];
+    return [33, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325];
+  }
+
   function layout() {
     const compact = isCompact();
     const h = scroller.clientHeight;
     const mid = h * 0.5;
-    eventsEl.innerHTML = "";
+    const minGap = compact ? 56 : 100;
+    const stem0 = compact ? 14 : 16;
+    const stemStep = compact ? 58 : 100;
+    assignLevels(minGap, compact ? 3 : 2);
+
+    const width = PAD * 2 + (YEAR1 - YEAR0) * pxPerYear;
+    track.style.width = width + "px";
     svg.innerHTML = "";
     track.querySelectorAll(".year-mark, .tick-spine").forEach((el) => el.remove());
-
-    const stem0 = compact ? 14 : 18;
-    const stemStep = compact ? 58 : 0;
-    const placed = placeEvents(compact);
-    const lastX = placed.reduce((m, p) => Math.max(m, p.x, p.trueX), 0);
-    const width = Math.max(PAD * 2 + (YEAR1 - YEAR0) * PX, lastX + PAD);
-    track.style.width = width + "px";
     sizeSvg();
 
-    const marks = [33, 50, 70, 100, 150, 200, 250, 300, 325];
-    marks.forEach((y) => {
+    yearMarks().forEach((y) => {
       const el = document.createElement("div");
       el.className = "year-mark";
       el.style.left = xOf(y) + "px";
@@ -141,41 +163,52 @@
       track.appendChild(el);
     });
 
-    placed.forEach((item) => {
+    items.forEach((item) => {
       const tick = document.createElement("div");
       tick.className = "tick-spine";
-      tick.style.left = item.trueX + "px";
+      tick.style.left = item.x + "px";
       track.appendChild(tick);
 
-      const node = document.createElement("div");
-      node.className = "event " + item.side;
-      node.style.left = item.x + "px";
-      node.style.top = mid + "px";
+      item.node.style.left = item.x + "px";
+      item.node.style.top = mid + "px";
       const pad = stem0 + item.level * stemStep;
-      if (item.side === "up") node.style.paddingBottom = pad + "px";
-      else node.style.paddingTop = pad + "px";
-      node.innerHTML = `
-        <div class="card">
-          <h3>${item.ev.title}</h3>
-          <div class="dates">${item.ev.label}</div>
-          <div class="summary">${item.ev.summary}</div>
-        </div>
-        <div class="disk" ${compact ? 'tabindex="0" role="button"' : ""} aria-label="${item.ev.title}">
-          <img src="${item.ev.image}" alt="">
-        </div>`;
-      eventsEl.appendChild(node);
-      if (compact) bindTap(node, item.ev);
+      if (item.side === "up") {
+        item.node.style.paddingBottom = pad + "px";
+        item.node.style.paddingTop = "";
+      } else {
+        item.node.style.paddingTop = pad + "px";
+        item.node.style.paddingBottom = "";
+      }
+    });
 
-      requestAnimationFrame(() => {
-        const disk = node.querySelector(".disk");
-        const dr = disk.getBoundingClientRect();
-        const tr = track.getBoundingClientRect();
-        const dx = dr.left + dr.width / 2 - tr.left;
-        const dy = dr.top + dr.height / 2 - tr.top;
-        const r = dr.width / 2;
-        const ang = Math.atan2(mid - dy, item.trueX - dx);
-        drawLine(item.trueX, mid, dx + Math.cos(ang) * r, dy + Math.sin(ang) * r);
-      });
+    void track.offsetHeight;
+    const tr = track.getBoundingClientRect();
+    items.forEach((item) => {
+      const dr = item.disk.getBoundingClientRect();
+      const dx = dr.left + dr.width / 2 - tr.left;
+      const dy = dr.top + dr.height / 2 - tr.top;
+      const r = dr.width / 2;
+      const ang = Math.atan2(mid - dy, item.x - dx);
+      drawLine(item.x, mid, dx + Math.cos(ang) * r, dy + Math.sin(ang) * r);
+    });
+  }
+
+  function zoomAt(clientX, nextPx) {
+    const clamped = Math.min(PX_MAX, Math.max(PX_MIN, nextPx));
+    if (Math.abs(clamped - pxPerYear) < 0.04) return;
+    const rect = scroller.getBoundingClientRect();
+    const xInView = clientX - rect.left;
+    const yearAt = YEAR0 + (scroller.scrollLeft + xInView - PAD) / pxPerYear;
+    pxPerYear = clamped;
+    layout();
+    scroller.scrollLeft = PAD + (yearAt - YEAR0) * pxPerYear - xInView;
+  }
+
+  function scheduleLayout() {
+    if (layoutRaf) return;
+    layoutRaf = requestAnimationFrame(() => {
+      layoutRaf = 0;
+      layout();
     });
   }
 
@@ -186,10 +219,55 @@
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeSheet();
   });
-  window.addEventListener("resize", () => {
-    if (!isCompact()) closeSheet();
-    layout();
+  window.addEventListener("resize", scheduleLayout);
+
+  scroller.addEventListener(
+    "wheel",
+    (e) => {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && !e.ctrlKey) return;
+      e.preventDefault();
+      const factor = e.deltaY < 0 ? 1.12 : 1 / 1.12;
+      zoomAt(e.clientX, pxPerYear * factor);
+    },
+    { passive: false }
+  );
+
+  let pinch = null;
+  function touchDist(a, b) {
+    const dx = a.clientX - b.clientX;
+    const dy = a.clientY - b.clientY;
+    return Math.hypot(dx, dy);
+  }
+  scroller.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length === 2) {
+        pinch = {
+          dist: touchDist(e.touches[0], e.touches[1]),
+          midX: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+          px: pxPerYear
+        };
+      }
+    },
+    { passive: true }
+  );
+  scroller.addEventListener(
+    "touchmove",
+    (e) => {
+      if (e.touches.length === 2 && pinch) {
+        e.preventDefault();
+        const d = touchDist(e.touches[0], e.touches[1]);
+        const midX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        zoomAt(midX, pinch.px * (d / pinch.dist));
+      }
+    },
+    { passive: false }
+  );
+  scroller.addEventListener("touchend", (e) => {
+    if (e.touches.length < 2) pinch = null;
   });
+
+  build();
   layout();
 
   const params = new URLSearchParams(location.search);
