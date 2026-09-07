@@ -53,9 +53,14 @@ body::before {
 }
 #links line { stroke-linecap: round; }
 .event {
-  position: absolute; width: 112px; margin-left: -56px; z-index: 5;
-  display: flex; flex-direction: column; align-items: center;
-  cursor: pointer;
+  position: absolute;
+  width: var(--node);
+  margin-left: calc(var(--node) / -2);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
 }
 .event.up { transform: translateY(-100%); padding-bottom: 16px; }
 .event.down { padding-top: 16px; }
@@ -64,6 +69,10 @@ body::before {
   border: 2px solid var(--gold);
   box-shadow: 0 8px 18px rgba(0,0,0,0.5), 0 0 12px rgba(201,164,74,0.25);
   background: #1a120c; flex-shrink: 0; order: 2;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 .event.up .disk { order: 2; }
 .event.down .disk { order: 1; }
@@ -74,7 +83,8 @@ body::before {
   pointer-events: none;
 }
 .event .caption {
-  width: 100%;
+  width: max-content;
+  max-width: 4.8em;
   font-family: Cinzel, serif;
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -86,6 +96,10 @@ body::before {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .event.up .caption { order: 1; margin-bottom: 6px; }
 .event.down .caption { order: 2; margin-top: 6px; }

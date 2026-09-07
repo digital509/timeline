@@ -228,6 +228,7 @@
       item.node.className = "event " + item.side;
       item.node.style.left = item.x + "px";
       item.node.style.top = "50%";
+      item.node.style.zIndex = String(8 + item.level);
       const pad = stem0 + item.level * stemStep;
       if (item.side === "up") {
         item.node.style.paddingBottom = pad + "px";
