@@ -81,17 +81,32 @@
 
   function openSheet(ev) {
     if (!ev || !sheet) return;
+    const kicker = ev.kind === "inferred"
+      ? "Inferred from later witness"
+      : "On the line";
+    const accounts = []
+      .concat(ev.summary ? [ev.summary] : [])
+      .concat(ev.account ? ev.account : []);
+    const body = accounts.map((p) => `<p>${p}</p>`).join("");
+    const sources = ev.sources && ev.sources.length
+      ? `<div class="sheet-sources"><h4>Sources</h4><ul>${ev.sources.map((s) => `<li>${s}</li>`).join("")}</ul></div>`
+      : "";
+    const caveat = ev.caveat
+      ? `<p class="sheet-caveat">${ev.caveat}</p>`
+      : "";
     sheetContent.innerHTML = `
       <div class="sheet-source">
         <div class="sheet-head">
           <div class="disk"><img src="${ev.image}" alt=""></div>
           <div>
-            <div class="sheet-kicker">On the line</div>
+            <div class="sheet-kicker">${kicker}</div>
             <h3 id="sheet-title">${ev.title}</h3>
             <div class="dates">${ev.label}</div>
           </div>
         </div>
-        <p>${ev.summary || ""}</p>
+        ${body}
+        ${sources}
+        ${caveat}
       </div>`;
     sheet.classList.add("is-open");
     sheet.setAttribute("aria-hidden", "false");
@@ -154,7 +169,7 @@
     const minGap = compact ? 56 : 100;
     const stem0 = compact ? 14 : 16;
     const stemStep = compact ? 58 : 100;
-    assignLevels(minGap, compact ? 3 : 2);
+    assignLevels(minGap, compact ? 4 : 3);
 
     const width = PAD * 2 + (YEAR1 - YEAR0) * pxPerYear;
     track.style.width = width + "px";
