@@ -103,8 +103,15 @@
     sheet.setAttribute("aria-hidden", "true");
   }
 
+  let suppressClick = false;
+
   function bindTap(node, ev) {
     const open = (e) => {
+      if (suppressClick) {
+        e.preventDefault();
+        e.stopPropagation();
+        return;
+      }
       e.preventDefault();
       e.stopPropagation();
       openSheet(ev);
@@ -220,6 +227,53 @@
     if (e.key === "Escape") closeSheet();
   });
   window.addEventListener("resize", scheduleLayout);
+
+  let drag = null;
+  const DRAG_THRESHOLD = 8;
+
+  scroller.addEventListener("pointerdown", (e) => {
+    if (e.button != null && e.button !== 0) return;
+    if (sheet && sheet.classList.contains("is-open")) return;
+    if (e.pointerType === "touch") return;
+    drag = {
+      id: e.pointerId,
+      startX: e.clientX,
+      startScroll: scroller.scrollLeft,
+      moved: false
+    };
+  });
+  window.addEventListener("pointermove", (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const dx = e.clientX - drag.startX;
+    if (!drag.moved) {
+      if (Math.abs(dx) < DRAG_THRESHOLD) return;
+      drag.moved = true;
+      scroller.classList.add("is-dragging");
+      try {
+        scroller.setPointerCapture(e.pointerId);
+      } catch (err) {}
+    }
+    e.preventDefault();
+    scroller.scrollLeft = drag.startScroll - dx;
+  });
+  function endDrag(e) {
+    if (!drag || (e.pointerId != null && e.pointerId !== drag.id)) return;
+    if (drag.moved) suppressClick = true;
+    drag = null;
+    scroller.classList.remove("is-dragging");
+  }
+  window.addEventListener("pointerup", endDrag);
+  window.addEventListener("pointercancel", endDrag);
+  scroller.addEventListener(
+    "click",
+    (e) => {
+      if (!suppressClick) return;
+      e.preventDefault();
+      e.stopPropagation();
+      suppressClick = false;
+    },
+    true
+  );
 
   scroller.addEventListener(
     "wheel",

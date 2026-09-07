@@ -31,7 +31,14 @@ body::before {
   flex: 1; min-height: 0; overflow-x: auto; overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x pinch-zoom;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
 }
+#scroller::-webkit-scrollbar { display: none; width: 0; height: 0; }
+#scroller.is-dragging,
+#scroller.is-dragging * { cursor: grabbing; }
 #track { position: relative; height: 100%; }
 #spine {
   position: absolute; left: 0; right: 0; top: 50%; height: 3px;
@@ -60,7 +67,12 @@ body::before {
 }
 .event.up .disk { order: 2; }
 .event.down .disk { order: 1; }
-.event .disk img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.event .disk img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
 .event .caption {
   width: 100%;
   font-family: Cinzel, serif;
