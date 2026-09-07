@@ -129,7 +129,7 @@ window.EVENTS = [
 
   { year: 90, label: "c. 80–100", title: "Polycarp hears John", short: "Polycarp hears", image: "assets/src-polycarp.jpg", kind: "inferred",
     summary: "In Asia, while John still remains at Ephesus, the young Polycarp hears the apostle and others who had seen the Lord.",
-    account: "Irenaeus is the witness. Against Heresies 3.3.4: Polycarp “was not only instructed by apostles, and conversed with many who had seen Christ, but was also, by apostles in Asia, appointed bishop of the church in Smyrna.” In the letter to Florinus — lost as a letter, quoted by Eusebius, Church History 5.20.4–8 — Irenaeus says he remembers the place where Polycarp sat when he discoursed, his way of life, his appearance, and “the accounts which he gave of his intercourse with John and with the others who had seen the Lord.” Irenaeus in the same chapter of Against Heresies says John remained at Ephesus until Trajan (98–117). The Martyrdom of Polycarp gives him eighty-six years at his death c. 155, so he was a young man in the 80s and 90s — the window in which a hearer of John at Ephesus has to sit. This is why a Polycarp node belongs here, beside John in Asia, and not only at the stake in 155.",
+    account: "Irenaeus is the witness. Against Heresies 3.3.4: Polycarp “was not only instructed by apostles, and conversed with many who had seen Christ, but was also, by apostles in Asia, appointed bishop of the church in Smyrna.” In the letter to Florinus — lost as a letter, quoted by Eusebius, Church History 5.20.4–8 — Irenaeus says he remembers the place where Polycarp sat when he discoursed, his way of life, his appearance, and “the accounts which he gave of his intercourse with John and with the others who had seen the Lord.” Irenaeus in the same chapter of Against Heresies says John remained at Ephesus until Trajan (98–117). The Martyrdom of Polycarp gives him eighty-six years at his death c. 155, so he was a young man in the 80s and 90s, while John was still in Asia.",
     sources: [
       "Irenaeus, Against Heresies 3.3.4",
       "Irenaeus, Letter to Florinus, via Eusebius, HE 5.20.4–8",
@@ -198,7 +198,7 @@ window.EVENTS = [
 
   { year: 155, label: "c. 155–156", title: "Polycarp martyred", short: "Polycarp", image: "assets/src-polycarp.jpg",
     summary: "Smyrna. The Martyrdom of Polycarp. He is eighty-six. The hearings of John are already a generation behind him.",
-    account: "The church of Smyrna writes the Martyrdom of Polycarp to the church of Philomelium. Polycarp is brought before the proconsul, confesses “I am a Christian,” and is burned. He says he has served Christ eighty-six years (Mart. Pol. 9). Irenaeus, who had heard him as a boy, is by this time in the West; the earlier nodes on this line — Polycarp hearing John, Irenaeus hearing Polycarp — are the reason this death is not his first appearance. Eusebius copies the martyrdom (HE 4.15).",
+    account: "The church of Smyrna writes the Martyrdom of Polycarp to the church of Philomelium. Polycarp is brought before the proconsul, confesses “I am a Christian,” and is burned. He says he has served Christ eighty-six years (Mart. Pol. 9). Irenaeus, who had heard him as a boy, is by this time in the West. Eusebius copies the martyrdom (HE 4.15).",
     sources: ["Martyrdom of Polycarp", "Eusebius, HE 4.15"] },
 
   { year: 165, label: "c. 165", title: "Justin martyred", short: "Justin", image: "assets/src-justin.jpg",
@@ -268,6 +268,6 @@ window.EVENTS = [
 
   { year: 325, label: "325", title: "Council of Nicaea", short: "Nicaea", image: "assets/icon-nicaea.jpg",
     summary: "Bishops from across the empire meet under Constantine. The creed concerning the Son is settled.",
-    account: "Eusebius, Life of Constantine 3, and the later historians describe the council: more than two hundred bishops, the emperor present, the question of the Son’s relation to the Father. The creed is issued, with anathemas. The age of public martyrdom as the church’s ordinary lot is over. The books and the chain this line has been tracing are, by then, the church’s received memory.",
+    account: "Eusebius, Life of Constantine 3, and the later historians describe the council: more than two hundred bishops, the emperor present, the question of the Son’s relation to the Father. The creed is issued, with anathemas. The age of public martyrdom as the church’s ordinary lot is over. The Gospels, the letters, and the memory of the apostles are by then the church’s received inheritance.",
     sources: ["Eusebius, Life of Constantine 3", "The creed of Nicaea"] }
 ];
