@@ -158,10 +158,30 @@ window.EVENTS = [
     account: "Origen, as Eusebius copies him (HE 3.1): the apostles were divided — Thomas to Parthia, Andrew to Scythia, John to Asia, Peter to the regions of Pontus and then Rome. Polycrates of Ephesus, writing to Victor of Rome (HE 5.24), lists “Philip, one of the twelve apostles, who fell asleep in Hierapolis,” with two aged virgin daughters. The later acts fill in martyrdoms; these first- and second-century notices are the mission fields.",
     sources: ["Origen via Eusebius, HE 3.1", "Polycrates via Eusebius, HE 5.24"] },
 
+  { year: 67.5, label: "c. 66–68", title: "The church to Pella", short: "Pella", image: "assets/ev-ship.jpg",
+    summary: "Eusebius: the church in Jerusalem is warned to leave the city before the war and to dwell at Pella in Perea.",
+    account: "Eusebius, Church History 3.5.3: the people of the church in Jerusalem received a prophetic oracle to depart before the war and to inhabit a city of Perea named Pella. Epiphanius (Panarion 29.7; 30.2; On Weights and Measures 15) repeats the same flight. Josephus records the siege that followed; he does not name Pella as a Christian refuge. The tradition is that the church of James left the city that was about to fall, and that a remnant later returned.",
+    sources: ["Eusebius, HE 3.5.3", "Epiphanius, Panarion 29.7; 30.2"] },
+
   { year: 70, label: "70", title: "Jerusalem destroyed", short: "Temple falls", image: "assets/ev-fire-temple.jpg",
     summary: "Titus takes the city. The temple falls — the horizon still standing in Hebrews and, on the early dating, in the Synoptics’ warnings.",
     account: "Josephus, Jewish War: after a long siege Titus takes Jerusalem; the temple burns in August of 70. Conservative readers of the Synoptics take the Olivet warnings as prophecy spoken before the event, not as vaticinium ex eventu. Hebrews never records the cult’s cessation. The church’s center of gravity moves off the city of the crucifixion.",
     sources: ["Josephus, Jewish War 6–7"] },
+
+  { year: 71, label: "c. 70–72", title: "Symeon of Jerusalem", short: "Symeon", image: "assets/ev-council.jpg",
+    summary: "After James and after the city’s fall, those still alive of the apostles, the disciples, and the Lord’s family choose Symeon son of Clopas to sit in James’s place.",
+    account: "Eusebius, Church History 3.11, following Hegesippus: after the martyrdom of James and the taking of Jerusalem, the apostles and disciples who remained, together with those who were of the Lord’s family after the flesh — many of them then still living — gathered and voted Symeon son of Clopas worthy to succeed James. Hegesippus says Clopas was brother of Joseph, so Symeon was a cousin of the Saviour. Eusebius HE 3.32: the same Symeon later suffers martyrdom under Trajan, accused of being of David’s line. The church of Jerusalem does not end with the temple.",
+    sources: ["Hegesippus via Eusebius, HE 3.11; 3.32; 4.22"] },
+
+  { year: 72, label: "c. 67–80", title: "Linus at Rome", short: "Linus", image: "assets/ev-gospel.jpg",
+    summary: "Irenaeus: after Peter and Paul have founded the church at Rome, they commit the episcopate to Linus. Paul had already named a Linus in 2 Timothy.",
+    account: "Irenaeus, Against Heresies 3.3.3: the blessed apostles founded and built up the church and committed the office of the episcopate to Linus; “of this Linus, Paul makes mention in the Epistles to Timothy.” 2 Timothy 4:21 greets “Pudens and Linus and Claudia.” After Linus, Irenaeus names Anacletus, then Clement, whose letter to Corinth still stands on this line. The Roman succession is thus counted from the apostles through the years when the temple is gone and John is still alive in Asia.",
+    sources: ["Irenaeus, Against Heresies 3.3.3", "2 Timothy 4:21"] },
+
+  { year: 75, label: "c. 75–79", title: "Josephus, Jewish War", short: "Jewish War", book: true, image: "assets/src-josephus.jpg",
+    summary: "A Jewish priest who saw the siege publishes the War in Greek, under Vespasian and Titus. The fall of the city becomes a book.",
+    account: "Josephus, a Pharisee of a priestly house, fought in Galilee, surrendered to Vespasian, and watched the destruction from the Roman side. In the 70s he writes the Jewish War in Greek, dedicated to the Flavian house. Books 5–7 are the siege, the burning of the temple, and the aftermath. He is not a Christian writer. He is the chief extra-biblical narrative of the event the church had fled, and of the world in which the remaining apostles still preached.",
+    sources: ["Josephus, Jewish War, preface; 5–7"] },
 
   { year: 85, label: "c. 80–95", title: "John · 1–3 John", short: "John", book: true, image: "assets/ev-gospel.jpg",
     summary: "The aged apostle at Ephesus. Gospel and letters in the last decades of the first century, after the temple’s fall.",
