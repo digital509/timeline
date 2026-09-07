@@ -140,8 +140,8 @@
   function build() {
     eventsEl.innerHTML = "";
     items = [];
-    EVENTS.forEach((ev, i) => {
-      const side = i % 2 === 0 ? "up" : "down";
+    EVENTS.forEach((ev) => {
+      const side = ev.book ? "up" : "down";
       const node = document.createElement("div");
       node.className = "event " + side;
       node.tabIndex = 0;
@@ -152,7 +152,7 @@
         <div class="disk"><img src="${ev.image}" alt=""></div>`;
       eventsEl.appendChild(node);
       bindTap(node, ev);
-      items.push({ ev, i, side, node, disk: node.querySelector(".disk") });
+      items.push({ ev, side, node, disk: node.querySelector(".disk") });
     });
   }
 
@@ -162,10 +162,25 @@
     return [33, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325];
   }
 
+  function drawStems() {
+    svg.innerHTML = "";
+    sizeSvg();
+    const tr = track.getBoundingClientRect();
+    const midY = track.offsetHeight / 2;
+    if (!tr.width || !tr.height) return;
+    items.forEach((item) => {
+      const dr = item.disk.getBoundingClientRect();
+      if (!dr.width) return;
+      const dx = dr.left + dr.width / 2 - tr.left;
+      const dy = dr.top + dr.height / 2 - tr.top;
+      const r = dr.width / 2;
+      const ang = Math.atan2(midY - dy, item.x - dx);
+      drawLine(item.x, midY, dx + Math.cos(ang) * r, dy + Math.sin(ang) * r);
+    });
+  }
+
   function layout() {
     const compact = isCompact();
-    const h = scroller.clientHeight;
-    const mid = h * 0.5;
     const minGap = compact ? 56 : 100;
     const stem0 = compact ? 14 : 16;
     const stemStep = compact ? 58 : 100;
@@ -173,9 +188,7 @@
 
     const width = PAD * 2 + (YEAR1 - YEAR0) * pxPerYear;
     track.style.width = width + "px";
-    svg.innerHTML = "";
     track.querySelectorAll(".year-mark, .tick-spine").forEach((el) => el.remove());
-    sizeSvg();
 
     yearMarks().forEach((y) => {
       const el = document.createElement("div");
@@ -192,7 +205,7 @@
       track.appendChild(tick);
 
       item.node.style.left = item.x + "px";
-      item.node.style.top = mid + "px";
+      item.node.style.top = "50%";
       const pad = stem0 + item.level * stemStep;
       if (item.side === "up") {
         item.node.style.paddingBottom = pad + "px";
@@ -204,14 +217,10 @@
     });
 
     void track.offsetHeight;
-    const tr = track.getBoundingClientRect();
-    items.forEach((item) => {
-      const dr = item.disk.getBoundingClientRect();
-      const dx = dr.left + dr.width / 2 - tr.left;
-      const dy = dr.top + dr.height / 2 - tr.top;
-      const r = dr.width / 2;
-      const ang = Math.atan2(mid - dy, item.x - dx);
-      drawLine(item.x, mid, dx + Math.cos(ang) * r, dy + Math.sin(ang) * r);
+    drawStems();
+    requestAnimationFrame(() => {
+      drawStems();
+      requestAnimationFrame(drawStems);
     });
   }
 
@@ -242,6 +251,13 @@
     if (e.key === "Escape") closeSheet();
   });
   window.addEventListener("resize", scheduleLayout);
+  window.addEventListener("load", scheduleLayout);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(scheduleLayout);
+  }
+  if (typeof ResizeObserver === "function") {
+    new ResizeObserver(scheduleLayout).observe(scroller);
+  }
 
   let drag = null;
   const DRAG_THRESHOLD = 8;

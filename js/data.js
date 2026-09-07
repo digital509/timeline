@@ -26,7 +26,7 @@ window.EVENTS = [
     account: "Acts 12:1–2: “About that time King Herod laid violent hands upon some who belonged to the church. He had James, the brother of John, killed with the sword.” Agrippa I dies shortly after (Acts 12:20–23), an event Josephus also records (Antiquities 19.343–352), which fixes the year at 44. Peter is arrested in the same sweep and escapes. James of Zebedee is the only one of the Twelve whose death is narrated in the New Testament.",
     sources: ["Acts 12:1–2", "Josephus, Antiquities 19.343–352"] },
 
-  { year: 48, label: "c. 48–49", title: "Galatians", image: "assets/ev-scroll.jpg",
+  { year: 48, label: "c. 48–49", title: "Galatians", book: true, image: "assets/ev-scroll.jpg",
     summary: "Paul’s letter to the Galatian churches, on the early (South Galatian) dating, before or around the Jerusalem council.",
     account: "Paul writes in his own name, defends his gospel as received “through a revelation of Jesus Christ,” and recounts his visits to Cephas and to James the Lord’s brother (Galatians 1–2). Conservative South-Galatian dating places the letter around the first missionary journey and before, or at, the council of Acts 15 — among the earliest surviving Christian documents after the creed of 1 Corinthians 15.",
     sources: ["Galatians 1–2", "Acts 13–14"] },
@@ -36,12 +36,12 @@ window.EVENTS = [
     account: "Acts 15: the church at Antioch sends Paul and Barnabas to Jerusalem. Peter speaks of God giving the Spirit to the Gentiles; James the Just gives the judgment. The decree is sent out with Judas and Silas. Galatians 2 is commonly read as the same meeting or as a related one: Paul, Barnabas, and Titus before the “pillars” — James, Cephas, and John — who give the right hand of fellowship.",
     sources: ["Acts 15", "Galatians 2:1–10"] },
 
-  { year: 49.5, label: "c. 44–49", title: "Letter of James", short: "James", image: "assets/ev-scroll.jpg",
+  { year: 49.5, label: "c. 44–49", title: "Letter of James", short: "James", book: true, image: "assets/ev-scroll.jpg",
     summary: "James the Just to the twelve tribes. Conservative dating places it among the earliest NT books, before the fall of Jerusalem.",
     account: "The letter names “James, a servant of God and of the Lord Jesus Christ.” Early tradition identifies the author with James the Lord’s brother, the pillar of Galatians 2 and the speaker of Acts 15. Conservative dating sets it before 70, often in the 40s, while James still leads the Jerusalem church. It is wisdom for the Dispersion, not a later catholic treatise.",
     sources: ["James 1:1", "Galatians 2:9", "Acts 15:13–21"] },
 
-  { year: 50, label: "c. 50–52", title: "1–2 Thessalonians", short: "1–2 Thess.", image: "assets/ev-scroll.jpg",
+  { year: 50, label: "c. 50–52", title: "1–2 Thessalonians", short: "1–2 Thess.", book: true, image: "assets/ev-scroll.jpg",
     summary: "Written from Corinth on the second missionary journey. Earliest surviving Pauline letters on the usual conservative chronology.",
     account: "Acts 17–18: Paul preaches at Thessalonica, is sent on to Berea and Athens, and settles at Corinth eighteen months. From there he writes to the church he has just planted. 1 Thessalonians assumes the readers remember his coming “in power and in the Holy Spirit” and already know the tradition of the Lord’s coming. 2 Thessalonians follows while the same team — Paul, Silvanus, Timothy — is still together.",
     sources: ["Acts 17:1–18:11", "1 Thessalonians 1–2", "2 Thessalonians 1:1"] },
@@ -51,12 +51,12 @@ window.EVENTS = [
     account: "Acts 13–21 traces three journeys: with Barnabas to Cyprus and the Galatian cities; with Silas through Macedonia and Achaia (Philippi, Thessalonica, Berea, Athens, Corinth); then the long stay at Ephesus and the return through Macedonia and Greece. The dated letters sit on this map. Luke writes as a sometime companion (“we” in Acts 16, 20–21, 27–28).",
     sources: ["Acts 13–21"] },
 
-  { year: 55, label: "c. 54–56", title: "1–2 Corinthians", short: "1–2 Cor.", image: "assets/ev-scroll.jpg",
+  { year: 55, label: "c. 54–56", title: "1–2 Corinthians", short: "1–2 Cor.", book: true, image: "assets/ev-scroll.jpg",
     summary: "From Ephesus and Macedonia. 1 Corinthians 15 again recites the resurrection appearances, including to Peter and James.",
     account: "Paul’s longest surviving pastoral correspondence with a single church. 1 Corinthians is sent from Ephesus (16:8). Chapter 15 recites the early creed and lists the witnesses. 2 Corinthians, from Macedonia, defends the apostleship after a painful visit. The letters assume a living network: Timothy, Titus, the collection for the saints in Jerusalem.",
     sources: ["1 Corinthians 15–16", "2 Corinthians 1–2; 8–9", "Acts 19–20"] },
 
-  { year: 57, label: "c. 57", title: "Romans", image: "assets/ev-scroll.jpg",
+  { year: 57, label: "c. 57", title: "Romans", book: true, image: "assets/ev-scroll.jpg",
     summary: "Paul writes to Rome from Corinth, planning to go on to Spain after Jerusalem.",
     account: "The longest surviving Pauline letter. He has not yet been to Rome, but he names a long list of believers already there (Romans 16) and hopes to be sent on to Spain after he has delivered the collection to Jerusalem (15:23–28). Phoebe of Cenchreae is commended as the bearer. Written during the three months in Greece of Acts 20:2–3, on the conservative count.",
     sources: ["Romans 1:7–15; 15:23–28; 16", "Acts 20:2–3"] },
@@ -66,7 +66,7 @@ window.EVENTS = [
     account: "Acts 21: Paul is taken in the temple on the charge of bringing Gentiles past the barrier. He defends himself before the crowd, before the Sanhedrin, before Felix, and before Festus and Agrippa II. The appeal to Caesar sends him to Rome. Luke’s “we” resumes for the voyage (Acts 27–28). Conservative chronology puts the arrest c. 57 and the Caesarean custody through 59.",
     sources: ["Acts 21–26"] },
 
-  { year: 60, label: "c. 60–62", title: "Prison letters · Luke · Acts", short: "Luke · Acts", image: "assets/ev-gospel.jpg",
+  { year: 60, label: "c. 60–62", title: "Prison letters · Luke · Acts", short: "Luke · Acts", book: true, image: "assets/ev-gospel.jpg",
     summary: "Ephesians, Philippians, Colossians, Philemon from Roman house arrest. Luke–Acts, on the early date, close while Paul is still alive.",
     account: "Acts ends with Paul in his own hired dwelling at Rome for two years, preaching “with all boldness and without hindrance” (28:30–31). The prison letters fit that house arrest. Luke–Acts, on the early date, can end at chapter 28 because the story has not yet gone further: Paul is alive, the temple still stands in the narrative memory, and the author is a companion. Irenaeus later says Luke recorded what Paul preached (AH 3.1.1).",
     sources: ["Acts 28:16–31", "Ephesians, Philippians, Colossians, Philemon", "Irenaeus, Against Heresies 3.1.1"] },
@@ -77,7 +77,7 @@ window.EVENTS = [
     sources: ["Irenaeus, Against Heresies 3.1.1", "1 Clement 5", "Acts 28", "1 Peter 5:13"],
     caveat: "Acts narrates Paul’s Roman custody; Peter’s presence in the city is the later church’s consistent memory, not a scene in Acts." },
 
-  { year: 62, label: "c. 55–65", title: "Mark", image: "assets/ev-gospel.jpg",
+  { year: 62, label: "c. 55–65", title: "Mark", book: true, image: "assets/ev-gospel.jpg",
     summary: "Mark writes Peter’s preaching. Conservative date: before 70, often in the 60s, from Rome.",
     account: "Papias of Hierapolis, as Eusebius copies him (HE 3.39.15): Mark was Peter’s interpreter and wrote down accurately what he remembered of the Lord’s words and deeds, not in order. Irenaeus (AH 3.1.1) places Mark after Peter and Paul’s departure. Clement of Alexandria (via Eusebius HE 2.15; 6.14) has Mark writing at Rome at the request of those who had heard Peter. Conservative dating keeps the book before the fall of the temple.",
     sources: ["Papias via Eusebius, HE 3.39.15", "Irenaeus, Against Heresies 3.1.1", "Clement of Alexandria via Eusebius, HE 2.15; 6.14"] },
@@ -87,7 +87,7 @@ window.EVENTS = [
     account: "Josephus, Antiquities 20.200: Ananus the Younger, in the interval after Festus’s death and before Albinus arrived, convened the Sanhedrin and brought before it “the brother of Jesus who was called Christ, whose name was James, and certain others,” and delivered them to be stoned. The year is 62. Hegesippus, as Eusebius copies him (HE 2.23), gives a longer Christian account of James’s death at the temple. The New Testament’s pillar of Jerusalem is gone eight years before the city falls.",
     sources: ["Josephus, Antiquities 20.200", "Hegesippus via Eusebius, HE 2.23"] },
 
-  { year: 63, label: "c. 60–70", title: "Matthew · Hebrews", short: "Matthew", image: "assets/ev-gospel.jpg",
+  { year: 63, label: "c. 60–70", title: "Matthew · Hebrews", short: "Matthew", book: true, image: "assets/ev-gospel.jpg",
     summary: "Matthew among the Hebrews. Hebrews before 70, while the temple cult still stands.",
     account: "Papias: Matthew compiled the logia in the Hebrew language (Eusebius HE 3.39.16). Irenaeus AH 3.1.1: Matthew published a Gospel among the Hebrews in their own tongue while Peter and Paul were at Rome. Origen, via Eusebius HE 6.25, repeats the Hebrew-Matthew tradition. Hebrews argues from a sanctuary still in operation (Heb 8–10) and never mentions the temple’s fall — on the conservative reading, because it has not yet happened.",
     sources: ["Papias via Eusebius, HE 3.39.16", "Irenaeus, Against Heresies 3.1.1", "Hebrews 8–10"] },
@@ -97,12 +97,12 @@ window.EVENTS = [
     account: "Tacitus, Annals 15.44: after the fire of 64, Nero fastened the guilt on “a class hated for their abominations, called Christians by the populace.” Christus had been executed under Pontius Pilate; the “superstition” broke out again in Judea and in Rome. An immense multitude was convicted; some were crucified, some burned as night lamps. This is a Roman historian, not a church writer, dating the sect to Pilate and describing its punishment in Nero’s city.",
     sources: ["Tacitus, Annals 15.44"] },
 
-  { year: 65, label: "c. 62–64", title: "1 Peter", image: "assets/ev-scroll.jpg",
+  { year: 65, label: "c. 62–64", title: "1 Peter", book: true, image: "assets/ev-scroll.jpg",
     summary: "Peter, through Silvanus, to the elect of the Diaspora, writing as the church comes under Nero’s shadow.",
     account: "The letter names “Peter, an apostle of Jesus Christ,” and says it is written “through Silvanus” (5:12). “She who is in Babylon, chosen together with you, sends you greetings” (5:13) — Babylon as Rome in the conservative reading, while Nero’s fire and the first imperial persecution are at the door. The churches addressed are in Pontus, Galatia, Cappadocia, Asia, and Bithynia, the same Asia where John will later remain.",
     sources: ["1 Peter 1:1; 5:12–13"] },
 
-  { year: 66, label: "c. 64–67", title: "2 Peter · Pastorals · Jude", short: "2 Peter · Jude", image: "assets/ev-scroll.jpg",
+  { year: 66, label: "c. 64–67", title: "2 Peter · Pastorals · Jude", short: "2 Peter · Jude", book: true, image: "assets/ev-scroll.jpg",
     summary: "Farewell letters while Peter and Paul still live: 2 Peter, 1–2 Timothy and Titus, and Jude of the Lord’s brothers.",
     account: "2 Peter presents itself as Peter’s second letter and as a reminder before his “departure” (1:13–15), and it already treats a collection of Paul’s letters as Scripture (3:15–16). 1–2 Timothy and Titus are Paul’s last letters on the conservative count — 2 Timothy in particular as a farewell from custody, naming those who have left and those who remain. Jude of the Lord’s brothers writes as the faith “once for all delivered.” Conservative dates fall before the martyrdoms and before 70.",
     sources: ["2 Peter 1:12–15; 3:15–16", "2 Timothy 4", "Jude 1"] },
@@ -122,7 +122,7 @@ window.EVENTS = [
     account: "Josephus, Jewish War: after a long siege Titus takes Jerusalem; the temple burns in August of 70. Conservative readers of the Synoptics take the Olivet warnings as prophecy spoken before the event, not as vaticinium ex eventu. Hebrews never records the cult’s cessation. The church’s center of gravity moves off the city of the crucifixion.",
     sources: ["Josephus, Jewish War 6–7"] },
 
-  { year: 85, label: "c. 80–95", title: "John · 1–3 John", short: "John", image: "assets/ev-gospel.jpg",
+  { year: 85, label: "c. 80–95", title: "John · 1–3 John", short: "John", book: true, image: "assets/ev-gospel.jpg",
     summary: "The aged apostle at Ephesus. Gospel and letters in the last decades of the first century, after the temple’s fall.",
     account: "Irenaeus, Against Heresies 3.1.1: “Afterwards, John, the disciple of the Lord, who also had leaned upon his breast, did himself publish a Gospel during his residence at Ephesus in Asia.” AH 3.3.4: the church at Ephesus was founded by Paul, and John remained among them until the times of Trajan. The three letters belong with that Asian residence. Conservative dating puts the Gospel after 70, in John’s old age.",
     sources: ["Irenaeus, Against Heresies 3.1.1; 3.3.4"] },
@@ -138,12 +138,12 @@ window.EVENTS = [
     ],
     caveat: "Polycarp’s own letter to the Philippians does not name John. The chain is Irenaeus’s testimony, written while Polycarp’s memory was still public in Asia and in Gaul." },
 
-  { year: 95, label: "c. 95", title: "Revelation", image: "assets/ev-patmos.jpg",
+  { year: 95, label: "c. 95", title: "Revelation", book: true, image: "assets/ev-patmos.jpg",
     summary: "Irenaeus: the vision seen “almost in our own generation, at the end of Domitian’s reign.” John on Patmos.",
     account: "Revelation 1:9: “I, John, your brother and companion in the tribulation… was on the island called Patmos on account of the word of God.” Irenaeus, Against Heresies 5.30.3, discussing the number of the beast: the vision “was seen not long ago, but almost in our own generation, at the end of Domitian’s reign.” Domitian dies in 96. Victorinus and Eusebius follow Irenaeus on the date. Conservative tradition then has John return to Ephesus after Domitian’s death.",
     sources: ["Revelation 1:9", "Irenaeus, Against Heresies 5.30.3", "Eusebius, HE 3.18; 3.20; 3.23"] },
 
-  { year: 96, label: "c. 96", title: "1 Clement", image: "assets/src-clement-rome.jpg",
+  { year: 96, label: "c. 96", title: "1 Clement", book: true, image: "assets/src-clement-rome.jpg",
     summary: "Rome writes to Corinth, naming Peter and Paul’s contests and “the letter of the blessed Paul.” Within living memory of the apostles.",
     account: "The church of Rome writes to the church of Corinth about a recent schism. Chapter 5 holds up Peter and Paul as examples “nearest to us.” Chapter 47 tells the Corinthians to take up “the letter of the blessed Paul the apostle,” written to them at the beginning of the gospel. The author writes as one who still stands in the generation that can point to the apostles’ deaths in his own city. Conservative dating, under Domitian or in the 90s, keeps the letter inside living memory.",
     sources: ["1 Clement 5; 47"] },
@@ -166,19 +166,19 @@ window.EVENTS = [
     account: "Ignatius, To the Romans: he asks the church in the capital not to intervene, so that he may be “the wheat of God, ground by the teeth of the beasts.” Eusebius (HE 3.36) places the martyrdom under Trajan. The seven letters are the document; the beasts at Rome are the end of the road that passed through Smyrna.",
     sources: ["Ignatius, To the Romans", "Eusebius, HE 3.36"] },
 
-  { year: 115, label: "c. 110–140", title: "Polycarp to the Philippians", short: "Polycarp writes", image: "assets/ev-scroll.jpg",
+  { year: 115, label: "c. 110–140", title: "Polycarp to the Philippians", short: "Polycarp writes", book: true, image: "assets/ev-scroll.jpg",
     summary: "The one surviving letter from the man Irenaeus calls a hearer of apostles. He quotes 1 Peter and Paul; he does not name John.",
     account: "Polycarp writes to Philippi after Ignatius’s passing. He weaves 1 Peter and the Pauline letters into his exhortation, calls Paul “the blessed and glorious Paul,” and in chapter 13 deals with the Ignatian correspondence. This is the first document we have from the Asian bishop who will later be martyred at Smyrna. It is also the honest limit of what Polycarp himself puts on the page: Paul and the gospel, not a named memoir of John.",
     sources: ["Polycarp, To the Philippians"],
     caveat: "The letter does not name John. Irenaeus is the one who records Polycarp’s intercourse with John; Polycarp’s own surviving page does not." },
 
-  { year: 125, label: "c. 110–130", title: "Papias writing", short: "Papias", image: "assets/src-papias.jpg",
+  { year: 125, label: "c. 110–130", title: "Papias writing", short: "Papias", book: true, image: "assets/src-papias.jpg",
     summary: "Hierapolis. Mark as Peter’s interpreter; Matthew’s logia in Hebrew. Lost as a book; quoted by Eusebius.",
     account: "Papias, bishop of Hierapolis in the same Asian circle as Polycarp, wrote five books of Expositions of the Sayings of the Lord. The work is lost. Eusebius (HE 3.39) copies the preface: Papias asked those who had followed the elders what Andrew, Peter, Philip, Thomas, James, John, or Matthew had said, preferring the living voice to books. He reports Mark as Peter’s interpreter and Matthew’s logia in Hebrew. Irenaeus (AH 5.33.4) calls Papias a hearer of John and a companion of Polycarp. Eusebius disputes that Papias heard the apostle John, and distinguishes John the Elder. The fragments remain the earliest named account of how Mark and Matthew were written.",
     sources: ["Papias via Eusebius, HE 3.39", "Irenaeus, Against Heresies 5.33.4"],
     caveat: "Irenaeus calls Papias a hearer of John. Eusebius (HE 3.39) argues Papias did not hear the apostle, only the Elder. The disagreement is part of the record." },
 
-  { year: 125.5, label: "c. 124–125", title: "Quadratus’s apology", short: "Quadratus", image: "assets/ev-scroll.jpg",
+  { year: 125.5, label: "c. 124–125", title: "Quadratus’s apology", short: "Quadratus", book: true, image: "assets/ev-scroll.jpg",
     summary: "Hadrian is in the East. Quadratus addresses an apology to the emperor and says some whom Jesus healed were still alive in his own day.",
     account: "Eusebius, HE 4.3: Quadratus addressed a discourse to Hadrian “because certain wicked men attempted to harass our people.” Eusebius quotes him: the works of the Saviour were always present, for they were true — those healed and those raised from the dead were seen not only when they were healed, but “were always present, and not merely while the Saviour was on earth, but also after his death they were alive for quite a while, so that some of them lived even to our day.” If genuine, this is a second-century claim that living witnesses of the miracles lasted into the early 100s.",
     sources: ["Quadratus via Eusebius, HE 4.3"] },
@@ -191,7 +191,7 @@ window.EVENTS = [
       "Irenaeus, Against Heresies 3.3.4"
     ] },
 
-  { year: 153, label: "c. 150–155", title: "Justin writes", short: "Justin", image: "assets/src-justin.jpg",
+  { year: 153, label: "c. 150–155", title: "Justin writes", short: "Justin", book: true, image: "assets/src-justin.jpg",
     summary: "Rome. The First Apology and the Dialogue with Trypho: the Gospels as the apostles’ memoirs; John named as author of Revelation.",
     account: "Justin, teaching at Rome in the reign of Antoninus, addresses the emperor on behalf of the Christians and, in the Dialogue, argues from Scripture with a Jew named Trypho. He calls the Gospels “the memoirs of the apostles” and says they were read with the prophets in the Sunday assembly (1 Apology 66–67). Dialogue 81: “There was a certain man with us, whose name was John, one of the apostles of Christ, who prophesied, by a revelation that was made to him, that those who believed in our Christ would dwell a thousand years in Jerusalem.” Justin is martyred later, under the prefect Rusticus; the books already stand.",
     sources: ["Justin, First Apology 66–67", "Justin, Dialogue with Trypho 81"] },
@@ -206,22 +206,22 @@ window.EVENTS = [
     account: "The Acts of Justin record the hearing before Q. Junius Rusticus, prefect of Rome under Marcus Aurelius. Justin and companions refuse to sacrifice and are beheaded. His Dialogue 81 had already named “John, one of the apostles of Christ,” as the seer of Revelation — a Roman witness to the Asian apostle, independent of Irenaeus.",
     sources: ["Acts of Justin", "Justin, Dialogue 81"] },
 
-  { year: 180, label: "c. 180", title: "Irenaeus, Against Heresies", short: "Irenaeus", image: "assets/src-irenaeus.jpg",
+  { year: 180, label: "c. 180", title: "Irenaeus, Against Heresies", short: "Irenaeus", book: true, image: "assets/src-irenaeus.jpg",
     summary: "Lyons. The fourfold gospel, the Pauline corpus, and the John–Polycarp–Irenaeus chain written down while the memory is still public.",
     account: "Irenaeus, bishop of Lyons, writes Against Heresies to name the church’s books against the Valentinians: four Gospels, no more, no fewer (AH 3.11.8); Matthew, Mark from Peter, Luke from Paul, John the disciple who leaned on the breast, published at Ephesus (3.1.1); the church of Ephesus and Polycarp of Smyrna as still-living proof of the apostolic tradition (3.3.4). He writes as a man who had heard Polycarp and who can still appeal to Asia. This is the document in which the chain becomes literature.",
     sources: ["Irenaeus, Against Heresies 3.1.1; 3.3.4; 3.11.8"] },
 
-  { year: 190, label: "c. 190–195", title: "Polycrates to Victor", short: "Polycrates", image: "assets/ev-scroll.jpg",
+  { year: 190, label: "c. 190–195", title: "Polycrates to Victor", short: "Polycrates", book: true, image: "assets/ev-scroll.jpg",
     summary: "The bishop of Ephesus writes to Victor of Rome. John the beloved disciple “fell asleep at Ephesus.” Philip of the Twelve at Hierapolis.",
     account: "Eusebius, HE 5.24, copies Polycrates’ letter in the Quartodeciman dispute. Polycrates lists the “great lights” of Asia who kept the 14th of Nisan: Philip, one of the Twelve, who fell asleep at Hierapolis, and two of his daughters; “John, who was both a witness and a teacher, who reclined upon the bosom of the Lord… for he was a priest wearing the sacerdotal plate, and a witness and a teacher; he fell asleep at Ephesus”; then Polycarp at Smyrna, Thraseas, Sagaris, Papirius, Melito. This is an Asian catalog, not Irenaeus’s Gaul memoir — a second, independent placement of John’s tomb at Ephesus.",
     sources: ["Polycrates of Ephesus via Eusebius, HE 5.24"] },
 
-  { year: 197, label: "c. 197", title: "Tertullian, Apology", short: "Tertullian", image: "assets/src-tertullian.jpg",
+  { year: 197, label: "c. 197", title: "Tertullian, Apology", short: "Tertullian", book: true, image: "assets/src-tertullian.jpg",
     summary: "Carthage. A Latin advocate names the apostles’ deaths at Rome and treats the church’s books as already ancient.",
     account: "Tertullian’s Apology addresses the Roman magistrates of North Africa. Prescription against Heretics 36: Rome can show the places where Peter’s and Paul’s blood was shed. Against Marcion and the other treatises assume a received Pauline corpus and four Gospels. He is a generation after Irenaeus, writing in Latin, from another shore of the sea — the same Peter, Paul, and church.",
     sources: ["Tertullian, Apology", "Tertullian, Prescription 36"] },
 
-  { year: 200, label: "c. 180–215", title: "Clement of Alexandria", short: "Clement", image: "assets/src-clement-alex.jpg",
+  { year: 200, label: "c. 180–215", title: "Clement of Alexandria", short: "Clement", book: true, image: "assets/src-clement-alex.jpg",
     summary: "The catechetical school. Mark written at Rome at the hearers’ request; John urged to write a spiritual Gospel.",
     account: "Eusebius, HE 2.15 and 6.14, copies Clement’s Hypotyposeis: the occasion of Mark was Peter’s preaching at Rome; those who heard him begged Mark to write; Peter neither forbade nor urged it. Last of all John, seeing that the outward facts had been set forth in the Gospels, was urged by disciples and by the Spirit to write a spiritual Gospel. Clement stands in Egypt, not Asia, and still tells the same two stories — Mark from Peter, John at the end.",
     sources: ["Clement of Alexandria via Eusebius, HE 2.15; 6.14"] },
@@ -231,7 +231,7 @@ window.EVENTS = [
     account: "The Passion of Perpetua and Felicity includes Perpetua’s own prison diary and an editor’s account of the arena. Vibia Perpetua, a young catechumen of good family, and the slave Felicity are thrown to the beasts at Carthage in the games, commonly dated 203. Tertullian’s Africa now has its own acta, as Smyrna had the Martyrdom of Polycarp.",
     sources: ["Passion of Perpetua and Felicity"] },
 
-  { year: 230, label: "c. 220–250", title: "Origen writing", short: "Origen", image: "assets/src-origen.jpg",
+  { year: 230, label: "c. 220–250", title: "Origen writing", short: "Origen", book: true, image: "assets/src-origen.jpg",
     summary: "Alexandria, then Caesarea. Commentaries, the Hexapla, and the notice that Peter was crucified and Paul beheaded.",
     account: "Eusebius, HE 6, is our narrative of Origen: the school at Alexandria, the Hexapla, the move to Caesarea, the commentaries on John, Matthew, and Romans. In HE 3.1 Eusebius copies Origen’s commentary on Genesis for the apostles’ fields and for Peter’s upside-down crucifixion and Paul’s beheading. Origen treats the four Gospels and the Pauline corpus as given. He will later suffer in the Decian persecution and die of the effects (HE 6.39).",
     sources: ["Origen via Eusebius, HE 3.1; 6"] },
@@ -261,7 +261,7 @@ window.EVENTS = [
     account: "Lactantius, On the Deaths of the Persecutors 48, and Eusebius, HE 10.5, preserve the letter of 313: Christians and all others are to have free power to follow their religion. Confiscated buildings are to be restored. The age in which the ordinary lot of the churches was the magistrate and the fire begins to close.",
     sources: ["Lactantius, On the Deaths of the Persecutors 48", "Eusebius, HE 10.5"] },
 
-  { year: 324, label: "c. 313–325", title: "Eusebius, Church History", short: "Eusebius", image: "assets/src-eusebius.jpg",
+  { year: 324, label: "c. 313–325", title: "Eusebius, Church History", short: "Eusebius", book: true, image: "assets/src-eusebius.jpg",
     summary: "Caesarea. The library that keeps Papias, Hegesippus, Dionysius, the letter to Florinus, Polycrates, and the rest from dropping out of the line.",
     account: "Eusebius of Caesarea compiles the Church History in successive editions across these years. Without his quotations, Papias’s preface, Irenaeus’s letter to Florinus, Polycrates to Victor, Quadratus’s sentence about the healed, and Origen on Peter and Paul would be gone or far thinner. He is a source and a witness: he has lived through the Great Persecution and the legalizing of the church, and he writes the chain down at the library in Caesarea as the bishops gather toward Nicaea.",
     sources: ["Eusebius, Church History"] },
