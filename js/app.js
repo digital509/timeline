@@ -85,17 +85,24 @@
     others.forEach((item) => {
       item.x = xOf(item.ev.year);
       const nearBook = books.some((b) => Math.abs(b.x - item.x) < minGap);
-      if (!nearBook) {
-        const upLevel = lowestLevel(placed, "up", item.x, minGap);
-        if (upLevel <= maxLevel) {
-          item.side = "up";
-          item.level = upLevel;
-          placed.push(item);
-          return;
-        }
+      const upLevel = lowestLevel(placed, "up", item.x, minGap);
+      const downLevel = lowestLevel(placed, "down", item.x, minGap);
+      if (nearBook) {
+        item.side = "down";
+        item.level = Math.min(maxLevel, downLevel);
+      } else if (upLevel <= maxLevel && (upLevel < downLevel || downLevel > maxLevel)) {
+        item.side = "up";
+        item.level = upLevel;
+      } else if (downLevel <= maxLevel && downLevel < upLevel) {
+        item.side = "down";
+        item.level = downLevel;
+      } else if (downLevel <= maxLevel) {
+        item.side = "down";
+        item.level = downLevel;
+      } else {
+        item.side = "up";
+        item.level = Math.min(maxLevel, upLevel);
       }
-      item.side = "down";
-      item.level = Math.min(maxLevel, lowestLevel(placed, "down", item.x, minGap));
       placed.push(item);
     });
   }
