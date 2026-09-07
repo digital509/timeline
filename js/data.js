@@ -47,9 +47,9 @@ window.EVENTS = [
     sources: ["Acts 12:1–2", "Josephus, Antiquities 19.343–352"] },
 
   { year: 46, label: "c. 46", title: "Relief to Jerusalem", short: "Famine visit", image: "assets/author-paul.jpg",
-    summary: "Barnabas and Saul take famine relief from Antioch to the elders in Jerusalem. On the South Galatian reading, this is also Paul before the pillars.",
-    account: "Acts 11:27–30: Agabus foretells a famine in the days of Claudius. The disciples at Antioch send relief to the brothers in Judea by the hand of Barnabas and Saul. On the South Galatian reading, Galatians 2:1–10 is this visit: after fourteen years Paul goes up with Barnabas and Titus, lays his gospel privately before those of repute — James, Cephas, and John — and they give the right hand of fellowship. Others read Galatians 2 as the council of Acts 15. Acts itself tells two journeys to Jerusalem; conservative readers divide on which one Paul is describing in Galatians 2.",
-    sources: ["Acts 11:27–30", "Galatians 2:1–10"],
+    summary: "Barnabas and Saul take famine relief from Antioch to the elders in Jerusalem. Josephus independently records a great famine in the city under Claudius.",
+    account: "Acts 11:27–30: Agabus foretells a famine in the days of Claudius. The disciples at Antioch send relief to the brothers in Judea by the hand of Barnabas and Saul. Josephus, Antiquities 20.51–53 and 20.101, describes the same Claudian famine at Jerusalem: many died for want; Queen Helena of Adiabene bought grain from Egypt and figs from Cyprus and distributed them, and her son Izates sent money to the principal men of the city. He does not mention the church at Antioch. On the South Galatian reading, Galatians 2:1–10 is this visit: after fourteen years Paul goes up with Barnabas and Titus, lays his gospel privately before those of repute — James, Cephas, and John — and they give the right hand of fellowship. Others read Galatians 2 as the council of Acts 15.",
+    sources: ["Acts 11:27–30", "Josephus, Antiquities 20.51–53; 20.101", "Galatians 2:1–10"],
     caveat: "Galatians 2:1–10 is either this famine visit or the council of Acts 15. Both meetings are in the narrative; the letter does not name which calendar year." },
 
   { year: 47, label: "c. 46–48", title: "First missionary journey", short: "Cyprus · Galatia", image: "assets/ev-ship.jpg",
