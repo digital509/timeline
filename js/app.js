@@ -51,32 +51,53 @@
     });
   }
 
-  function assignLevels(minGap, maxLevel) {
-    const placed = [];
-    items
-      .slice()
-      .sort((a, b) => a.ev.year - b.ev.year)
-      .forEach((item) => {
-        const x = xOf(item.ev.year);
-        let level = 0;
-        let bump = true;
-        while (bump) {
-          bump = false;
-          for (let p = 0; p < placed.length; p++) {
-            const other = placed[p];
-            if (other.side !== item.side || other.level !== level) continue;
-            if (Math.abs(other.x - x) < minGap) {
-              level += 1;
-              bump = true;
-              break;
-            }
-          }
+  function lowestLevel(placed, side, x, minGap) {
+    let level = 0;
+    let bump = true;
+    while (bump) {
+      bump = false;
+      for (let p = 0; p < placed.length; p++) {
+        const other = placed[p];
+        if (other.side !== side || other.level !== level) continue;
+        if (Math.abs(other.x - x) < minGap) {
+          level += 1;
+          bump = true;
+          break;
         }
-        if (level > maxLevel) level = maxLevel;
-        item.x = x;
-        item.level = level;
-        placed.push(item);
-      });
+      }
+    }
+    return level;
+  }
+
+  function assignLevels(minGap, maxLevel) {
+    const byYear = (a, b) => a.ev.year - b.ev.year;
+    const books = items.filter((it) => it.ev.book).sort(byYear);
+    const others = items.filter((it) => !it.ev.book).sort(byYear);
+    const placed = [];
+
+    books.forEach((item) => {
+      item.x = xOf(item.ev.year);
+      item.side = "up";
+      item.level = Math.min(maxLevel, lowestLevel(placed, "up", item.x, minGap));
+      placed.push(item);
+    });
+
+    others.forEach((item) => {
+      item.x = xOf(item.ev.year);
+      const nearBook = books.some((b) => Math.abs(b.x - item.x) < minGap);
+      if (!nearBook) {
+        const upLevel = lowestLevel(placed, "up", item.x, minGap);
+        if (upLevel <= maxLevel) {
+          item.side = "up";
+          item.level = upLevel;
+          placed.push(item);
+          return;
+        }
+      }
+      item.side = "down";
+      item.level = Math.min(maxLevel, lowestLevel(placed, "down", item.x, minGap));
+      placed.push(item);
+    });
   }
 
   function openSheet(ev) {
@@ -204,6 +225,7 @@
       tick.style.left = item.x + "px";
       track.appendChild(tick);
 
+      item.node.className = "event " + item.side;
       item.node.style.left = item.x + "px";
       item.node.style.top = "50%";
       const pad = stem0 + item.level * stemStep;
