@@ -16,24 +16,60 @@ window.EVENTS = [
     account: "Acts 6–7: Stephen, one of the Seven, is accused of speaking against the temple and the law. His speech recites Israel’s story and ends with the vision of the Son of Man. He is taken outside the city and stoned. “The witnesses laid their coats at the feet of a young man named Saul” (Acts 7:58). The persecution that follows scatters the church through Judea and Samaria (Acts 8:1–4).",
     sources: ["Acts 6–8"] },
 
+  { year: 35.4, label: "c. 34–36", title: "Peter and John in Samaria", short: "Samaria", image: "assets/apostle-peter.jpg",
+    summary: "After the scattering, Philip preaches in Samaria. Jerusalem sends Peter and John; they lay hands on the new believers.",
+    account: "Acts 8: the persecution that followed Stephen’s death scatters the church. Philip, one of the Seven, preaches in the city of Samaria. The apostles at Jerusalem hear that Samaria has received the word and send Peter and John, who pray and lay hands on them. On the way back they preach in many Samaritan villages. Two of the Twelve are on the road together, still from Jerusalem, before Paul’s conversion is told.",
+    sources: ["Acts 8:4–25"] },
+
   { year: 36, label: "c. 34–36", title: "Paul’s conversion", short: "Damascus", image: "assets/ev-light.jpg",
     summary: "The risen Jesus appears to Saul on the Damascus road. The persecutor becomes the apostle to the nations.",
-    account: "Acts 9: a light from heaven, the voice “Saul, Saul, why do you persecute me?”, and blindness until Ananias lays on hands. Paul himself dates the call to God’s revealing of the Son “in me” and says he did not immediately consult flesh and blood, but went to Arabia and back to Damascus, then after three years to Jerusalem to see Cephas (Galatians 1:15–18). The persecutor of 1 Corinthians 15:9 is the same man who recites the creed.",
-    sources: ["Acts 9", "Galatians 1:11–24", "1 Corinthians 15:8–10"] },
+    account: "Acts 9: a light from heaven, the voice “Saul, Saul, why do you persecute me?”, and blindness until Ananias lays on hands. Paul himself dates the call to God’s revealing of the Son “in me” and says he did not immediately consult flesh and blood, but went away into Arabia and returned to Damascus (Galatians 1:15–17). The persecutor of 1 Corinthians 15:9 is the same man who recites the creed. The visit to Cephas comes three years later.",
+    sources: ["Acts 9", "Galatians 1:11–17", "1 Corinthians 15:8–10"] },
+
+  { year: 38, label: "c. 37–39", title: "Paul visits Cephas", short: "Fifteen days", image: "assets/apostle-peter.jpg",
+    summary: "Three years after the conversion, Paul goes up to Jerusalem and stays with Cephas fifteen days. He also sees James the Lord’s brother.",
+    account: "Galatians 1:18–20: “Then after three years I went up to Jerusalem to visit Cephas and remained with him fifteen days. But I saw none of the other apostles except James the Lord’s brother. In what I am writing to you, before God, I do not lie.” Acts 9:26–30 is the same first visit: Barnabas takes him to the apostles; he preaches in Jerusalem; the Hellenists seek to kill him; the brothers send him to Tarsus. Peter and Paul meet in the flesh years before Galatians is written, and years before the council.",
+    sources: ["Galatians 1:18–24", "Acts 9:26–30"] },
+
+  { year: 40, label: "c. 39–41", title: "Peter at Caesarea", short: "Cornelius", image: "assets/apostle-peter.jpg",
+    summary: "Peter is sent to the house of Cornelius. The Spirit falls on Gentiles while Peter is still speaking.",
+    account: "Acts 10: a centurion at Caesarea, a vision of unclean animals, and Peter’s word, “God has shown me that I should not call any person common or unclean.” While he is still speaking, the Holy Spirit falls on all who hear, and they are baptized. Acts 11: Peter defends the baptism before the circumcision party in Jerusalem. The Gentile mission in Acts begins with one of the Twelve, in a Roman house, before Paul’s journeys and before Galatians.",
+    sources: ["Acts 10–11:18"] },
+
+  { year: 43, label: "c. 42–44", title: "Barnabas and Saul at Antioch", short: "Antioch", image: "assets/author-paul.jpg",
+    summary: "Barnabas fetches Saul from Tarsus. They teach a year at Antioch; the disciples are first called Christians.",
+    account: "Acts 11:19–26: the scattered preach as far as Antioch. The church in Jerusalem sends Barnabas; he sees the grace of God, goes to Tarsus for Saul, and they remain a whole year with the church. “In Antioch the disciples were first called Christians.” This is the base from which the first missionary journey will be sent, and the city where Paul will later oppose Cephas to his face.",
+    sources: ["Acts 11:19–26"] },
 
   { year: 44, label: "44", title: "James son of Zebedee killed", short: "James Zebedee", image: "assets/ev-sword.jpg",
     summary: "Herod Agrippa I puts James the brother of John to the sword — the first apostle-martyr in the New Testament narrative.",
     account: "Acts 12:1–2: “About that time King Herod laid violent hands upon some who belonged to the church. He had James, the brother of John, killed with the sword.” Agrippa I dies shortly after (Acts 12:20–23), an event Josephus also records (Antiquities 19.343–352), which fixes the year at 44. Peter is arrested in the same sweep and escapes. James of Zebedee is the only one of the Twelve whose death is narrated in the New Testament.",
     sources: ["Acts 12:1–2", "Josephus, Antiquities 19.343–352"] },
 
+  { year: 46, label: "c. 46", title: "Relief to Jerusalem", short: "Famine visit", image: "assets/author-paul.jpg",
+    summary: "Barnabas and Saul take famine relief from Antioch to the elders in Jerusalem. On the South Galatian reading, this is also Paul before the pillars.",
+    account: "Acts 11:27–30: Agabus foretells a famine in the days of Claudius. The disciples at Antioch send relief to the brothers in Judea by the hand of Barnabas and Saul. On the South Galatian reading, Galatians 2:1–10 is this visit: after fourteen years Paul goes up with Barnabas and Titus, lays his gospel privately before those of repute — James, Cephas, and John — and they give the right hand of fellowship. Others read Galatians 2 as the council of Acts 15. Acts itself tells two journeys to Jerusalem; conservative readers divide on which one Paul is describing in Galatians 2.",
+    sources: ["Acts 11:27–30", "Galatians 2:1–10"],
+    caveat: "Galatians 2:1–10 is either this famine visit or the council of Acts 15. Both meetings are in the narrative; the letter does not name which calendar year." },
+
+  { year: 47, label: "c. 46–48", title: "First missionary journey", short: "Cyprus · Galatia", image: "assets/ev-ship.jpg",
+    summary: "The Spirit sends Barnabas and Saul from Antioch. Cyprus, then the Galatian cities: Pisidian Antioch, Iconium, Lystra, Derbe.",
+    account: "Acts 13–14: at Antioch the Spirit says, “Set apart for me Barnabas and Saul.” They preach across Cyprus before Sergius Paulus the proconsul, then sail to Perga, where John Mark leaves them. In Pisidian Antioch, Iconium, Lystra, and Derbe they plant churches among Jews and Gentiles and appoint elders on the way back. These are the churches of Galatia to which Paul will write. He returns to Syrian Antioch and reports what God has done.",
+    sources: ["Acts 13–14"] },
+
+  { year: 47.7, label: "c. 48", title: "Peter at Antioch", short: "Cephas at Antioch", image: "assets/apostle-peter.jpg",
+    summary: "Cephas comes to Antioch. After men from James arrive, he draws back from the Gentiles. Paul opposes him to his face.",
+    account: "Galatians 2:11–14: “When Cephas came to Antioch, I opposed him to his face, because he stood condemned.” He had been eating with the Gentiles; when certain men came from James, he drew back and separated himself, fearing the circumcision party. The rest of the Jews joined him, “so that even Barnabas was led astray.” Paul rebukes him before them all: if he, a Jew, lives like a Gentile, how can he compel Gentiles to live like Jews? On the early dating this clash is still open when Paul writes to Galatia, before the council’s public decree.",
+    sources: ["Galatians 2:11–14"] },
+
   { year: 48, label: "c. 48–49", title: "Galatians", book: true, image: "assets/ev-scroll.jpg",
-    summary: "Paul’s letter to the Galatian churches, on the early (South Galatian) dating, before or around the Jerusalem council.",
-    account: "Paul writes in his own name, defends his gospel as received “through a revelation of Jesus Christ,” and recounts his visits to Cephas and to James the Lord’s brother (Galatians 1–2). Conservative South-Galatian dating places the letter around the first missionary journey and before, or at, the council of Acts 15 — among the earliest surviving Christian documents after the creed of 1 Corinthians 15.",
+    summary: "Paul writes to the churches of the first journey. He recounts the fifteen days with Cephas and the clash at Antioch.",
+    account: "The letter is to the Galatian churches just planted (Acts 13–14). Paul defends a gospel received “through a revelation of Jesus Christ,” not from Jerusalem. He reminds them of the fifteen days with Cephas three years after his call, of the later visit with Barnabas and Titus before the pillars, and of the open rebuke of Cephas at Antioch (Galatians 1–2). Conservative South-Galatian dating places the letter after that first journey and before, or at, the council of Acts 15 — among the earliest surviving Christian documents after the creed of 1 Corinthians 15.",
     sources: ["Galatians 1–2", "Acts 13–14"] },
 
   { year: 49, label: "c. 49", title: "Jerusalem council", short: "Council", image: "assets/ev-council.jpg",
     summary: "Peter, Paul, Barnabas, and James the Just settle that Gentile believers are not to be yoked to the full Mosaic law.",
-    account: "Acts 15: the church at Antioch sends Paul and Barnabas to Jerusalem. Peter speaks of God giving the Spirit to the Gentiles; James the Just gives the judgment. The decree is sent out with Judas and Silas. Galatians 2 is commonly read as the same meeting or as a related one: Paul, Barnabas, and Titus before the “pillars” — James, Cephas, and John — who give the right hand of fellowship.",
+    account: "Acts 15: after the first journey, men from Judea teach at Antioch that circumcision is necessary. The church sends Paul and Barnabas to Jerusalem. Peter speaks of God giving the Spirit to the Gentiles at Cornelius’s house; James the Just gives the judgment. The decree is sent out with Judas and Silas. Some read Galatians 2:1–10 as this council; others as the earlier famine visit. Either way, Peter, Paul, Barnabas, and James are in one room, and Gentile freedom is the question.",
     sources: ["Acts 15", "Galatians 2:1–10"] },
 
   { year: 49.5, label: "c. 44–49", title: "Letter of James", short: "James", book: true, image: "assets/ev-scroll.jpg",
@@ -46,10 +82,15 @@ window.EVENTS = [
     account: "Acts 17–18: Paul preaches at Thessalonica, is sent on to Berea and Athens, and settles at Corinth eighteen months. From there he writes to the church he has just planted. 1 Thessalonians assumes the readers remember his coming “in power and in the Holy Spirit” and already know the tradition of the Lord’s coming. 2 Thessalonians follows while the same team — Paul, Silvanus, Timothy — is still together.",
     sources: ["Acts 17:1–18:11", "1 Thessalonians 1–2", "2 Thessalonians 1:1"] },
 
-  { year: 51, label: "c. 46–57", title: "Paul’s journeys", short: "Journeys", image: "assets/ev-ship.jpg",
-    summary: "Cyprus and Galatia; Macedonia and Achaia; Ephesus and Greece. Churches planted; letters follow the roads.",
-    account: "Acts 13–21 traces three journeys: with Barnabas to Cyprus and the Galatian cities; with Silas through Macedonia and Achaia (Philippi, Thessalonica, Berea, Athens, Corinth); then the long stay at Ephesus and the return through Macedonia and Greece. The dated letters sit on this map. Luke writes as a sometime companion (“we” in Acts 16, 20–21, 27–28).",
-    sources: ["Acts 13–21"] },
+  { year: 50.2, label: "c. 49–50", title: "Barnabas and Mark to Cyprus", short: "Barnabas", image: "assets/ev-ship.jpg",
+    summary: "After the council, Paul and Barnabas divide over John Mark. Barnabas takes Mark to Cyprus; Paul takes Silas through Syria and Cilicia.",
+    account: "Acts 15:36–41: Paul proposes to Barnabas that they return to the churches of the first journey. Barnabas wants to take John Mark; Paul refuses, because Mark had withdrawn at Perga. The disagreement is sharp. Barnabas takes Mark and sails to Cyprus, his own country. Paul chooses Silas, is commended by the brothers, and goes through Syria and Cilicia. Two apostolic teams now move instead of one. Mark will later be useful to Paul (2 Timothy 4:11) and, in the conservative tradition, Peter’s interpreter.",
+    sources: ["Acts 15:36–41", "2 Timothy 4:11"] },
+
+  { year: 51, label: "c. 50–57", title: "Second and third journeys", short: "Macedonia · Ephesus", image: "assets/ev-ship.jpg",
+    summary: "Paul and Silas through Macedonia and Achaia; then the long stay at Ephesus and the return through Greece. Letters follow the roads.",
+    account: "Acts 16–21, after the split with Barnabas: Timothy is taken on at Lystra; the Spirit forbids Asia and Bithynia; the Macedonian vision at Troas; Philippi, Thessalonica, Berea, Athens, Corinth (eighteen months). From Corinth he writes to Thessalonica. The third journey is the three years at Ephesus (Acts 19–20) and the return through Macedonia and Greece, with Luke as a sometime companion (“we” in Acts 16, 20–21). 1–2 Corinthians and Romans sit on this stretch.",
+    sources: ["Acts 16–21"] },
 
   { year: 55, label: "c. 54–56", title: "1–2 Corinthians", short: "1–2 Cor.", book: true, image: "assets/ev-scroll.jpg",
     summary: "From Ephesus and Macedonia. 1 Corinthians 15 again recites the resurrection appearances, including to Peter and James.",
