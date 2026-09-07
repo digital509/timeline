@@ -116,7 +116,9 @@
     if (!ev || !sheet) return;
     const kicker = ev.kind === "inferred"
       ? "Inferred from later witness"
-      : "On the line";
+      : ev.kind === "find"
+        ? "From the ground"
+        : "On the line";
     const accounts = []
       .concat(ev.summary ? [ev.summary] : [])
       .concat(ev.account ? ev.account : []);

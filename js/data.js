@@ -272,6 +272,12 @@ window.EVENTS = [
     account: "Irenaeus, bishop of Lyons, writes Against Heresies to name the church’s books against the Valentinians: four Gospels, no more, no fewer (AH 3.11.8); Matthew, Mark from Peter, Luke from Paul, John the disciple who leaned on the breast, published at Ephesus (3.1.1); the church of Ephesus and Polycarp of Smyrna as still-living proof of the apostolic tradition (3.3.4). He writes as a man who had heard Polycarp and who can still appeal to Asia. This is the document in which the chain becomes literature.",
     sources: ["Irenaeus, Against Heresies 3.1.1; 3.3.4; 3.11.8"] },
 
+  { year: 192, label: "c. 180–200", title: "The Fish · Abercius", short: "Ichthys", image: "assets/find-ichthys.jpg", kind: "find",
+    summary: "A Phrygian epitaph names the Fish from the fountain, bread, and mixed wine. The ichthys is in the ground by the late second century.",
+    account: "The epitaph of Abercius (Avircius) of Hieropolis in Phrygia, fragments now in the Vatican, speaks of Faith setting before him everywhere “a fish from a fountain, enormous and pure, which a holy virgin grasped,” with wine mixed and bread — the eucharist in the language of the Fish. Abercius is commonly identified with Avircius Marcellus, known from Eusebius HE 5.16 in the reign of Marcus Aurelius. The Alexander epitaph of 216 copies his verses, which helps to date the original before that year. Tertullian, On Baptism 1 (c. 200), can already call Christians “little fishes” born in water after “our ΙΧΘΥΣ, Jesus Christ.” Fish and anchors also appear on Roman catacomb epitaphs of the late second and early third centuries (among them Licinia Amias). The symbol is not a first-century carving; it is securely in stone by Abercius’s generation.",
+    sources: ["Epitaph of Abercius", "Tertullian, On Baptism 1", "Eusebius, HE 5.16"],
+    caveat: "Identifiable Christian fish-symbols in art and stone belong to the second half of the second century onward, not to the apostolic decades." },
+
   { year: 190, label: "c. 190–195", title: "Polycrates to Victor", short: "Polycrates", book: true, image: "assets/ev-scroll.jpg",
     summary: "The bishop of Ephesus writes to Victor of Rome. John the beloved disciple “fell asleep at Ephesus.” Philip of the Twelve at Hierapolis.",
     account: "Eusebius, HE 5.24, copies Polycrates’ letter in the Quartodeciman dispute. Polycrates lists the “great lights” of Asia who kept the 14th of Nisan: Philip, one of the Twelve, who fell asleep at Hierapolis, and two of his daughters; “John, who was both a witness and a teacher, who reclined upon the bosom of the Lord… for he was a priest wearing the sacerdotal plate, and a witness and a teacher; he fell asleep at Ephesus”; then Polycarp at Smyrna, Thraseas, Sagaris, Papirius, Melito. This is an Asian catalog, not Irenaeus’s Gaul memoir — a second, independent placement of John’s tomb at Ephesus.",
@@ -287,6 +293,12 @@ window.EVENTS = [
     account: "Eusebius, HE 2.15 and 6.14, copies Clement’s Hypotyposeis: the occasion of Mark was Peter’s preaching at Rome; those who heard him begged Mark to write; Peter neither forbade nor urged it. Last of all John, seeing that the outward facts had been set forth in the Gospels, was urged by disciples and by the Spirit to write a spiritual Gospel. Clement stands in Egypt, not Asia, and still tells the same two stories — Mark from Peter, John at the end.",
     sources: ["Clement of Alexandria via Eusebius, HE 2.15; 6.14"] },
 
+  { year: 201, label: "c. 190–220", title: "Alexamenos graffito", short: "Alexamenos", image: "assets/find-alexamenos.jpg", kind: "find",
+    summary: "Palatine Hill, Rome. A servant of Caesar’s household is mocked for worshipping a crucified god. The earliest surviving picture of the cross as a Christian scandal.",
+    account: "Scratched in plaster in the Paedagogium on the Palatine, a room used by imperial pages. A figure stands before a crucified man with a donkey’s head; the Greek reads, in substance, “Alexamenos worships [his] god.” The wall-paintings of the room and the palaeography of the graffiti point to the late second or early third century, most often around 200. Tertullian, Apology 16 and To the Nations 1.14, already knows the pagan jibe that Christians worshiped an ass’s head. The drawing is mockery, not devotion: it shows that in Rome a crucified Jesus was known as a god some Christians would worship, and that outsiders thought it absurd. The slab is now in the Palatine Museum.",
+    sources: ["Palatine graffito, Paedagogium, Palatine Museum", "Tertullian, Apology 16", "Tertullian, To the Nations 1.14"],
+    caveat: "Dates proposed for the scratch run from the late first century to the late third; the beginning of the third is the usual judgment." },
+
   { year: 203, label: "c. 202–203", title: "Perpetua and Felicity", short: "Perpetua", image: "assets/ev-arena.jpg",
     summary: "Carthage. The Passion of Perpetua. North African martyrdom under Septimius Severus; the church keeps the acta.",
     account: "The Passion of Perpetua and Felicity includes Perpetua’s own prison diary and an editor’s account of the arena. Vibia Perpetua, a young catechumen of good family, and the slave Felicity are thrown to the beasts at Carthage in the games, commonly dated 203. Tertullian’s Africa now has its own acta, as Smyrna had the Martyrdom of Polycarp.",
@@ -297,6 +309,17 @@ window.EVENTS = [
     account: "Eusebius, HE 6, is our narrative of Origen: the school at Alexandria, the Hexapla, the move to Caesarea, the commentaries on John, Matthew, and Romans. In HE 3.1 Eusebius copies Origen’s commentary on Genesis for the apostles’ fields and for Peter’s upside-down crucifixion and Paul’s beheading. Origen treats the four Gospels and the Pauline corpus as given. He will later suffer in the Decian persecution and die of the effects (HE 6.39).",
     sources: ["Origen via Eusebius, HE 3.1; 6"] },
 
+  { year: 232, label: "c. 230", title: "Megiddo mosaic", short: "Megiddo", image: "assets/find-megiddo.jpg", kind: "find",
+    summary: "A prayer hall at Kefar ‘Othnay, beside the camp of Legio VI Ferrata. Two fish in the pavement, and a table offered “to God Jesus Christ.”",
+    account: "Excavated at Megiddo Prison in 2005. A mosaic floor in a modest hall used by Christians attached to the Roman Sixth Legion. One panel shows two fish. An inscription names the God-loving Akeptous, who “has offered the table to God Jesus Christ as a memorial.” Coins, pottery, and letter-forms are commonly read around 230; the floor was later covered, perhaps in the years of Diocletian. This is among the earliest Christian floor mosaics we have — not a first-century church, and not later Constantinian basilica art, but a third-century hall that already calls Jesus God in stone.",
+    sources: ["Megiddo / Kefar ‘Othnay mosaic inscriptions", "Israel Antiquities Authority, 2005 excavation"],
+    caveat: "A minority would date the hall later in the third century or after. The excavators’ working date is c. 230." },
+
+  { year: 241, label: "c. 232–256", title: "Dura-Europos baptistery", short: "Dura", image: "assets/find-dura.jpg", kind: "find",
+    summary: "On the Euphrates, a house is remodeled for Christian assembly. The baptistery walls show the Good Shepherd, the paralytic, and Christ walking on the water — the oldest surviving church paintings.",
+    account: "Dura-Europos, a frontier city destroyed when the Sasanians took it in the 250s. A private house was converted around 240: an assembly room, a baptistery with a font. The paintings, now at Yale, are the earliest church wall-pictures yet found: Christ as shepherd with a ram; the healing of the paralytic; Christ and Peter on the sea; the women at the tomb. They sit more than seventy years before Constantine. The art is not mosaic; it is painted plaster in a house-church on the eastern edge of the empire.",
+    sources: ["Dura-Europos Christian building, Yale University Art Gallery", "Excavations of Yale and the French Academy, 1931–32"] },
+
   { year: 250, label: "250", title: "Decian persecution", short: "Decius", image: "assets/ev-altar.jpg",
     summary: "Empire-wide demand for sacrifice. Origen suffers. The church’s books are already old enough to be hunted.",
     account: "Decius requires a certificate of sacrifice from the inhabitants of the empire. Cyprian at Carthage and Dionysius at Alexandria describe the lapsed and the confessors. Eusebius HE 6.39: Origen is imprisoned and tortured under Decius and dies later of the effects, in the reign of Gallus. A church that can be asked for its books is a church whose Scriptures are already a public object.",
@@ -306,6 +329,12 @@ window.EVENTS = [
     summary: "Carthage, under Valerian. The bishop who had steered the church through Decius is beheaded.",
     account: "The Acta Proconsularia of Cyprian record the hearing before the proconsul Galerius Maximus on 14 September 258. Cyprian confesses that he is a Christian and a bishop, refuses to sacrifice, and is beheaded. His letters and treatises — On the Lapsed, On the Unity of the Church — are already in circulation. North Africa now has a bishop-martyr in the line of Perpetua’s acta.",
     sources: ["Acta Proconsularia of St Cyprian", "Cyprian, letters"] },
+
+  { year: 268, label: "c. 260–280", title: "Chi-Rho on gems", short: "Chi-Rho", image: "assets/find-chirho.jpg", kind: "find",
+    summary: "Before the labarum is public, the chi-rho already marks Christian gems in the Greek East.",
+    account: "The chi-rho — chi and rho of Χριστός laid together — was a Greek abbreviation long before it was a church emblem. As a free-standing Christian sign it appears on gems from Asia Minor and Syria in the later third century, a generation or more before Constantine’s vision. Catacomb chi-rhos in Rome are harder to date; many that look early have been argued down into the fourth century. What is secure is that the monogram is not invented in 312. Constantine makes it imperial and visible. The stones show it was already a private Christian mark in the East.",
+    sources: ["Jeffrey Spier, Late Antique and Early Christian Gems", "Lactantius, On the Deaths of the Persecutors 44 (the public sign in 312)"],
+    caveat: "A public, dated chi-rho on an inscription or coin belongs to Constantine’s century. The earlier evidence is small objects, not basilica floors." },
 
   { year: 303, label: "303", title: "Great Persecution", short: "Diocletian", image: "assets/ev-burn.jpg",
     summary: "Diocletian. Eusebius is an eyewitness of churches razed and scriptures burned — and of the copies that survived.",
