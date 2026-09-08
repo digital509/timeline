@@ -75,6 +75,28 @@ body::before {
   color: var(--gold-soft);
   font-weight: 600;
 }
+.sheet-said {
+  margin: 0 0 10px 12px;
+  padding-left: 12px;
+  border-left: 2px solid rgba(201, 164, 74, 0.45);
+}
+.sheet-said p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--parchment);
+  margin-bottom: 2px;
+}
+.sheet-said cite {
+  display: block;
+  font-family: Cinzel, serif;
+  font-size: 9px;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
 #scroller {
   flex: 1; min-height: 0; overflow-x: auto; overflow-y: hidden;
   -webkit-overflow-scrolling: touch;

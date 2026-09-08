@@ -36,6 +36,12 @@ window.EVENTS = [
       critic: "Usually a few years after the crucifixion, c. 33–36.",
       habermas: "About two years after a 30 crucifixion — c. 32 — so Paul is in the story almost at once.",
       huff: "With a 33 cross, the Damascus road sits in the mid-30s."
+    },
+    quotes: {
+      habermas: {
+        text: "By the time Paul saw the risen Jesus on the road to Damascus and was converted in 32 AD, only 2 years after the resurrection.",
+        cite: "Gary Habermas"
+      }
     } },
 
   { year: 34.2, label: "c. 32–35", title: "The 1 Corinthians 15 creed", short: "The creed", book: true, image: "assets/ev-scroll.jpg",
@@ -48,6 +54,16 @@ window.EVENTS = [
       critic: "Near-consensus that this is pre-Pauline tradition from the 30s, not Paul’s own invention in the 50s.",
       habermas: "The load-bearing date in his timeline: in circulation in the early 30s; Paul gets it by the Jerusalem visit c. 35. Dunn: months from the cross; some say even sooner.",
       huff: "Follows O’Collins and others: mid-30s at latest, 40 at the outside."
+    },
+    quotes: {
+      habermas: {
+        text: "If this were modern writing, he’d have to put a footnote here. He said I got this from somebody else.",
+        cite: "Gary Habermas, on 1 Corinthians 15:3"
+      },
+      huff: {
+        text: "If Gerald O’Collins is correct, and the creed is mid-30s, and Mark is writing a prequel to the creed, then it isn’t crazy to hypothesize it being written in the late 30s.",
+        cite: "Wesley Huff, on Mark and the creed"
+      }
     } },
 
   { year: 38, label: "c. 37–39", title: "Paul visits Cephas", short: "Fifteen days", image: "assets/apostle-peter.jpg",
@@ -60,6 +76,12 @@ window.EVENTS = [
       critic: "Galatians 1:18 is taken as a real visit, three years after conversion.",
       habermas: "c. 35: the meeting where Paul can receive the 1 Corinthians 15 list from Peter and James.",
       huff: "Same visit, on a mid-30s conversion, still well before any Gospel."
+    },
+    quotes: {
+      habermas: {
+        text: "Paul goes to Jerusalem in Galatians chapter 1. He spends 15 days with Peter and James. Bingo, whose names are in that list?",
+        cite: "Gary Habermas"
+      }
     } },
 
   { year: 40, label: "c. 39–41", title: "Peter at Caesarea", short: "Cornelius", image: "assets/apostle-peter.jpg",
@@ -132,6 +154,12 @@ window.EVENTS = [
       critic: "1 Thessalonians ~50–51, usually the earliest NT book. 2 Thessalonians is often dated later or treated as disputed.",
       habermas: "1 Thessalonians ~50 (sometimes 48): the start of the written Pauline window.",
       huff: "Corinth, second journey: both letters in the early 50s."
+    },
+    quotes: {
+      habermas: {
+        text: "You start with the book of 1 Thessalonians, which is usually said to be the earliest book in the New Testament, and it’s dated about 50 AD. Some scholars put it back a couple years to 48.",
+        cite: "Gary Habermas"
+      }
     } },
 
   { year: 50.2, label: "c. 49–50", title: "Barnabas and Mark to Cyprus", short: "Barnabas", image: "assets/ev-ship.jpg",
@@ -154,6 +182,16 @@ window.EVENTS = [
       critic: "1 Corinthians ~53–54; 2 Corinthians ~55–56. Undisputed Paul.",
       habermas: "1 Corinthians ~55–57, the letter that carries the 15:3–7 creed.",
       huff: "Even on later counts, 53–57 — and 1 Corinthians 11 may quote Luke."
+    },
+    quotes: {
+      habermas: {
+        text: "Whatever date you put these epistles, they’re going to be between 48 to 50 and about 62 to 63. There’s a window there of less than 15 years, and all those epistles fit right in there.",
+        cite: "Gary Habermas, on the undisputed Paulines"
+      },
+      huff: {
+        text: "In 1 Corinthians, even by some of the latest dating, it has been placed between 53 and 57 AD. So I think if Paul is quoting Luke’s gospel, then Luke could be as early as 53.",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 57, label: "c. 57", title: "Romans", book: true, image: "assets/ev-scroll.jpg",
@@ -207,6 +245,16 @@ window.EVENTS = [
       critic: "Usually 80–90, after Mark and after 70.",
       habermas: "When quoting typical critical averages: about 85.",
       huff: "Synoptics in the 40s–60s; if 1 Corinthians 11 quotes Luke 22, Luke could be as early as 53."
+    },
+    quotes: {
+      habermas: {
+        text: "Luke is 85 or plus 55.",
+        cite: "Gary Habermas, citing typical critical dates"
+      },
+      huff: {
+        text: "If Paul is quoting Luke’s gospel, then Luke could be as early as 53.",
+        cite: "Wesley Huff, on 1 Corinthians 11 and Luke 22"
+      }
     } },
 
   { year: 62.2, label: "c. 60–62", title: "Acts", short: "Acts", book: true, image: "assets/ev-gospel.jpg",
@@ -219,6 +267,16 @@ window.EVENTS = [
       critic: "Commonly 85–100, after Luke, often after 70.",
       habermas: "Often ~85 with Luke; few critics put Acts before 65.",
       huff: "Before 64–67, because Luke never records Peter’s or Paul’s death."
+    },
+    quotes: {
+      habermas: {
+        text: "Not too many people will put Acts before 65, and it’s often put about 85.",
+        cite: "Gary Habermas"
+      },
+      huff: {
+        text: "I think we can say at minimum Acts is written before the death of Peter and Paul. … Given the lack of Peter and Paul’s death, it’s a good marker to put the synoptics pre-70.",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 60.5, label: "c. 60–64", title: "Peter and Paul at Rome", short: "Rome", image: "assets/apostle-peter.jpg", kind: "inferred",
@@ -237,6 +295,16 @@ window.EVENTS = [
       critic: "Earliest Gospel, around 70 (often 68–72), near or after the war.",
       habermas: "Typical critical average he cites: 65–70. A survey he quotes clustered there, with Mark as author and Peter as source.",
       huff: "With the other Synoptics, 40s–60s, well inside living memory."
+    },
+    quotes: {
+      habermas: {
+        text: "The date for Mark is about 65 to 70. … 65 to 70 that’s 35 to 40 years and Mark is the author and Peter who he was Peter’s traveling companion.",
+        cite: "Gary Habermas, using typical critical dates"
+      },
+      huff: {
+        text: "I would put Mark anywhere within the realm of 40 or 50 and then the other gospels not coming long after that, but certainly all of Matthew, Mark, and Luke before 70 AD.",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 62.4, label: "62", title: "James the Just martyred", short: "James the Just", image: "assets/author-james-just.jpg",
@@ -254,6 +322,16 @@ window.EVENTS = [
       critic: "Usually 80–90, after Mark and after 70, for a church still arguing Torah.",
       habermas: "When using critic dates: about 80–85.",
       huff: "Synoptics 40s–60s; Irenaeus’s “while Peter and Paul were at Rome” is taken as the 60s."
+    },
+    quotes: {
+      habermas: {
+        text: "I’m going to use critic dates. … Matthew’s 80 or plus 50. Luke is 85 or plus 55. And John is the latest gospel … 95 AD.",
+        cite: "Gary Habermas, on typical critical Gospel dates"
+      },
+      huff: {
+        text: "I date the Synoptic Gospels (Matthew, Mark, Luke) pretty early (40s–60s AD). I didn’t mention it but I actually date John late (90s AD).",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 63.4, label: "c. 60–70", title: "Hebrews", book: true, image: "assets/ev-scroll.jpg",
@@ -331,6 +409,16 @@ window.EVENTS = [
       critic: "Nero, after the fire of 64, is the usual window; some put Paul in 62.",
       habermas: "Often 62–63, to close the Pauline letter window.",
       huff: "64–67, still under Nero, after the fire."
+    },
+    quotes: {
+      habermas: {
+        text: "The martyrdom of Paul is usually put at about 63 AD, give or take a year.",
+        cite: "Gary Habermas"
+      },
+      huff: {
+        text: "We know from extra-biblical writings that are relatively reliable … that Paul was martyred in the city of Rome somewhere between 64 and 67 AD.",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 68, label: "c. 60–80", title: "Andrew · Philip · Thomas", short: "Three missions", image: "assets/ev-ship.jpg",
@@ -373,6 +461,16 @@ window.EVENTS = [
       critic: "Gospel often 90–110; letters nearby. A minority pushes into the second century.",
       habermas: "Typical date he cites for John: about 95.",
       huff: "John late, in the 90s — unlike his early Synoptics."
+    },
+    quotes: {
+      habermas: {
+        text: "John is the latest gospel at … 95 AD.",
+        cite: "Gary Habermas"
+      },
+      huff: {
+        text: "I actually date John late (90s AD).",
+        cite: "Wesley Huff"
+      }
     } },
 
   { year: 90, label: "c. 80–100", title: "Polycarp hears John", short: "Polycarp hears", image: "assets/src-polycarp.jpg", kind: "inferred",

@@ -144,11 +144,19 @@
     const caveat = ev.caveat
       ? `<p class="sheet-caveat">${ev.caveat}</p>`
       : "";
-    const views = ev.views
+    function said(who, key) {
+      const para = ev.views && ev.views[key] ? `<p><strong>${who}.</strong> ${ev.views[key]}</p>` : "";
+      const q = ev.quotes && ev.quotes[key];
+      const quote = q
+        ? `<blockquote class="sheet-said"><p>“${q.text}”</p><cite>${q.cite}</cite></blockquote>`
+        : "";
+      return para + quote;
+    }
+    const views = (ev.views || ev.quotes)
       ? `<div class="sheet-views"><h4>How they date this</h4>
-          <p><strong>Critics.</strong> ${ev.views.critic || ""}</p>
-          <p><strong>Habermas.</strong> ${ev.views.habermas || ""}</p>
-          <p><strong>Huff.</strong> ${ev.views.huff || ""}</p>
+          ${said("Critics", "critic")}
+          ${said("Habermas", "habermas")}
+          ${said("Huff", "huff")}
         </div>`
       : "";
     sheetContent.innerHTML = `
