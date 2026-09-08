@@ -17,6 +17,11 @@
   let pxPerYear = PX_DEFAULT;
   let items = [];
   let layoutRaf = 0;
+  let era = "huff";
+  try {
+    const saved = localStorage.getItem("timeline-era");
+    if (saved === "critic" || saved === "habermas" || saved === "huff") era = saved;
+  } catch (err) {}
 
   function isCompact() {
     return window.matchMedia("(max-width: 720px)").matches;
@@ -24,6 +29,16 @@
 
   function pxMax() {
     return isCompact() ? PX_MAX_COMPACT : PX_MAX_DESKTOP;
+  }
+
+  function yearOf(ev) {
+    if (ev.when && typeof ev.when[era] === "number") return ev.when[era];
+    return ev.year;
+  }
+
+  function labelOf(ev) {
+    if (ev.whenLabel && ev.whenLabel[era]) return ev.whenLabel[era];
+    return ev.label;
   }
 
   function xOf(year) {
@@ -75,20 +90,20 @@
   }
 
   function assignLevels(minGap, maxLevel) {
-    const byYear = (a, b) => a.ev.year - b.ev.year;
+    const byYear = (a, b) => yearOf(a.ev) - yearOf(b.ev);
     const books = items.filter((it) => it.ev.book).sort(byYear);
     const others = items.filter((it) => !it.ev.book).sort(byYear);
     const placed = [];
 
     books.forEach((item) => {
-      item.x = xOf(item.ev.year);
+      item.x = xOf(yearOf(item.ev));
       item.side = "up";
       item.level = Math.min(maxLevel, lowestLevel(placed, "up", item.x, minGap));
       placed.push(item);
     });
 
     others.forEach((item) => {
-      item.x = xOf(item.ev.year);
+      item.x = xOf(yearOf(item.ev));
       const nearBook = books.some((b) => Math.abs(b.x - item.x) < minGap);
       const upLevel = lowestLevel(placed, "up", item.x, minGap);
       const downLevel = lowestLevel(placed, "down", item.x, minGap);
@@ -129,6 +144,13 @@
     const caveat = ev.caveat
       ? `<p class="sheet-caveat">${ev.caveat}</p>`
       : "";
+    const views = ev.views
+      ? `<div class="sheet-views"><h4>How they date this</h4>
+          <p><strong>Critics.</strong> ${ev.views.critic || ""}</p>
+          <p><strong>Habermas.</strong> ${ev.views.habermas || ""}</p>
+          <p><strong>Huff.</strong> ${ev.views.huff || ""}</p>
+        </div>`
+      : "";
     sheetContent.innerHTML = `
       <div class="sheet-source">
         <div class="sheet-head">
@@ -136,10 +158,11 @@
           <div>
             <div class="sheet-kicker">${kicker}</div>
             <h3 id="sheet-title">${ev.title}</h3>
-            <div class="dates">${ev.label}</div>
+            <div class="dates">${labelOf(ev)}</div>
           </div>
         </div>
         ${body}
+        ${views}
         ${sources}
         ${caveat}
       </div>`;
@@ -388,6 +411,27 @@
   );
   scroller.addEventListener("touchend", (e) => {
     if (e.touches.length < 2) pinch = null;
+  });
+
+  function setEra(next, keepYear) {
+    if (next !== "critic" && next !== "habermas" && next !== "huff") return;
+    const y = keepYear != null
+      ? keepYear
+      : YEAR0 + (scroller.scrollLeft + scroller.clientWidth * 0.4 - PAD) / pxPerYear;
+    era = next;
+    try { localStorage.setItem("timeline-era", era); } catch (err) {}
+    document.querySelectorAll("#era-switch [data-era]").forEach((btn) => {
+      btn.setAttribute("aria-selected", btn.getAttribute("data-era") === era ? "true" : "false");
+    });
+    layout();
+    scroller.scrollLeft = Math.max(0, xOf(y) - scroller.clientWidth * 0.4);
+  }
+
+  document.querySelectorAll("#era-switch [data-era]").forEach((btn) => {
+    btn.addEventListener("click", () => setEra(btn.getAttribute("data-era")));
+  });
+  document.querySelectorAll("#era-switch [data-era]").forEach((btn) => {
+    btn.setAttribute("aria-selected", btn.getAttribute("data-era") === era ? "true" : "false");
   });
 
   build();

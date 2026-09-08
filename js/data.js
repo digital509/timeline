@@ -4,7 +4,12 @@ window.EVENTS = [
   { year: 33, label: "c. 30/33", title: "Resurrection", image: "assets/ev-tomb.jpg",
     summary: "Jesus is raised. The church’s life begins from this claim.",
     account: "Paul recites a creed he says he received and handed on: Christ died for our sins, was buried, was raised on the third day, and appeared to Cephas, the Twelve, more than five hundred, James, all the apostles, and last of all to Paul himself (1 Corinthians 15:3–8). The Gospels narrate the empty tomb and the appearances. Conservative chronology places the crucifixion and resurrection under Pontius Pilate, c. 30 or 33.",
-    sources: ["1 Corinthians 15:3–8", "The four Gospels"] },
+    sources: ["1 Corinthians 15:3–8", "The four Gospels"],
+    views: {
+      critic: "Pilate’s prefecture (26–36) is not in dispute. 30 and 33 are both used; many historians prefer 30.",
+      habermas: "Prefers 30 as the working date for his resurrection timeline; 33 is the second most common.",
+      huff: "Often charts the crucifixion at 33."
+    } },
 
   { year: 33.4, label: "c. 30/33", title: "Pentecost", image: "assets/ev-pentecost.jpg",
     summary: "The Spirit falls in Jerusalem; Peter preaches. The mission of the Twelve starts in the city of the crucifixion.",
@@ -22,14 +27,40 @@ window.EVENTS = [
     sources: ["Acts 8:4–25"] },
 
   { year: 36, label: "c. 34–36", title: "Paul’s conversion", short: "Damascus", image: "assets/ev-light.jpg",
+    when: { critic: 36, habermas: 32, huff: 36 },
+    whenLabel: { critic: "c. 34–36", habermas: "c. 32 (cross +2)", huff: "c. 34–36" },
     summary: "The risen Jesus appears to Saul on the Damascus road. The persecutor becomes the apostle to the nations.",
     account: "Acts 9: a light from heaven, the voice “Saul, Saul, why do you persecute me?”, and blindness until Ananias lays on hands. Paul himself dates the call to God’s revealing of the Son “in me” and says he did not immediately consult flesh and blood, but went away into Arabia and returned to Damascus (Galatians 1:15–17). The persecutor of 1 Corinthians 15:9 is the same man who recites the creed. The visit to Cephas comes three years later.",
-    sources: ["Acts 9", "Galatians 1:11–17", "1 Corinthians 15:8–10"] },
+    sources: ["Acts 9", "Galatians 1:11–17", "1 Corinthians 15:8–10"],
+    views: {
+      critic: "Usually a few years after the crucifixion, c. 33–36.",
+      habermas: "About two years after a 30 crucifixion — c. 32 — so Paul is in the story almost at once.",
+      huff: "With a 33 cross, the Damascus road sits in the mid-30s."
+    } },
+
+  { year: 34.2, label: "c. 32–35", title: "The 1 Corinthians 15 creed", short: "The creed", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 34, habermas: 33, huff: 34 },
+    whenLabel: { critic: "c. 32–38", habermas: "c. 30–35", huff: "c. mid-30s" },
+    summary: "An oral summary of the death, burial, resurrection, and appearances, older than the letter that quotes it.",
+    account: "1 Corinthians 15:3–7 is widely read as a creed Paul “received” and “handed on.” It names Cephas, the Twelve, more than five hundred, James, and all the apostles. Paul adds himself in verse 8. He is writing the letter in the 50s; he says he had already delivered this material when he founded the Corinthian church. Many place his receipt of it at the fifteen days with Cephas (Galatians 1:18).",
+    sources: ["1 Corinthians 15:3–8", "Galatians 1:18–19"],
+    views: {
+      critic: "Near-consensus that this is pre-Pauline tradition from the 30s, not Paul’s own invention in the 50s.",
+      habermas: "The load-bearing date in his timeline: in circulation in the early 30s; Paul gets it by the Jerusalem visit c. 35. Dunn: months from the cross; some say even sooner.",
+      huff: "Follows O’Collins and others: mid-30s at latest, 40 at the outside."
+    } },
 
   { year: 38, label: "c. 37–39", title: "Paul visits Cephas", short: "Fifteen days", image: "assets/apostle-peter.jpg",
+    when: { critic: 38, habermas: 35, huff: 38 },
+    whenLabel: { critic: "c. 37–39", habermas: "c. 35", huff: "c. 37–39" },
     summary: "Three years after the conversion, Paul goes up to Jerusalem and stays with Cephas fifteen days. He also sees James the Lord’s brother.",
     account: "Galatians 1:18–20: “Then after three years I went up to Jerusalem to visit Cephas and remained with him fifteen days. But I saw none of the other apostles except James the Lord’s brother. In what I am writing to you, before God, I do not lie.” Acts 9:26–30 is the same first visit: Barnabas takes him to the apostles; he preaches in Jerusalem; the Hellenists seek to kill him; the brothers send him to Tarsus. Peter and Paul meet in the flesh years before Galatians is written, and years before the council.",
-    sources: ["Galatians 1:18–24", "Acts 9:26–30"] },
+    sources: ["Galatians 1:18–24", "Acts 9:26–30"],
+    views: {
+      critic: "Galatians 1:18 is taken as a real visit, three years after conversion.",
+      habermas: "c. 35: the meeting where Paul can receive the 1 Corinthians 15 list from Peter and James.",
+      huff: "Same visit, on a mid-30s conversion, still well before any Gospel."
+    } },
 
   { year: 40, label: "c. 39–41", title: "Peter at Caesarea", short: "Cornelius", image: "assets/apostle-peter.jpg",
     summary: "Peter is sent to the house of Cornelius. The Spirit falls on Gentiles while Peter is still speaking.",
@@ -63,9 +94,16 @@ window.EVENTS = [
     sources: ["Galatians 2:11–14"] },
 
   { year: 48, label: "c. 48–49", title: "Galatians", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 54, habermas: 52, huff: 48 },
+    whenLabel: { critic: "c. 50–55", habermas: "c. 50–55", huff: "c. 48–49" },
     summary: "Paul writes to the churches of the first journey. He recounts the fifteen days with Cephas and the clash at Antioch.",
     account: "The letter is to the Galatian churches just planted (Acts 13–14). Paul defends a gospel received “through a revelation of Jesus Christ,” not from Jerusalem. He reminds them of the fifteen days with Cephas three years after his call, of the later visit with Barnabas and Titus before the pillars, and of the open rebuke of Cephas at Antioch (Galatians 1–2). Conservative South-Galatian dating places the letter after that first journey and before, or at, the council of Acts 15 — among the earliest surviving Christian documents after the creed of 1 Corinthians 15.",
-    sources: ["Galatians 1–2", "Acts 13–14"] },
+    sources: ["Galatians 1–2", "Acts 13–14"],
+    views: {
+      critic: "Undisputed Paul. Usually 50–55, often after the council (North Galatian).",
+      habermas: "Among the seven undisputed letters, inside the 48/50–62 window.",
+      huff: "South Galatian / early: just after the first journey, before or at Acts 15."
+    } },
 
   { year: 49, label: "c. 49", title: "Jerusalem council", short: "Council", image: "assets/ev-council.jpg",
     summary: "Peter, Paul, Barnabas, and James the Just settle that Gentile believers are not to be yoked to the full Mosaic law.",
@@ -73,14 +111,28 @@ window.EVENTS = [
     sources: ["Acts 15", "Galatians 2:1–10"] },
 
   { year: 49.5, label: "c. 44–49", title: "Letter of James", short: "James", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 85, habermas: 49, huff: 49 },
+    whenLabel: { critic: "c. 80–100", habermas: "maybe before 1 Thess", huff: "c. 44–49" },
     summary: "James the Just to the twelve tribes. Conservative dating places it among the earliest NT books, before the fall of Jerusalem.",
     account: "The letter names “James, a servant of God and of the Lord Jesus Christ.” Early tradition identifies the author with James the Lord’s brother, the pillar of Galatians 2 and the speaker of Acts 15. Conservative dating sets it before 70, often in the 40s, while James still leads the Jerusalem church. It is wisdom for the Dispersion, not a later catholic treatise.",
-    sources: ["James 1:1", "Galatians 2:9", "Acts 15:13–21"] },
+    sources: ["James 1:1", "Galatians 2:9", "Acts 15:13–21"],
+    views: {
+      critic: "Often 80–100, not by the brother of Jesus; some still allow a 60s origin.",
+      habermas: "Notes that James may be earlier than 1 Thessalonians (~50).",
+      huff: "Traditional: James the Just, among the earliest NT books, before 70."
+    } },
 
   { year: 50, label: "c. 50–52", title: "1–2 Thessalonians", short: "1–2 Thess.", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 51, habermas: 50, huff: 50 },
+    whenLabel: { critic: "c. 50–51 (1 Thess)", habermas: "c. 50 (some 48)", huff: "c. 50–52" },
     summary: "Written from Corinth on the second missionary journey. Earliest surviving Pauline letters on the usual conservative chronology.",
     account: "Acts 17–18: Paul preaches at Thessalonica, is sent on to Berea and Athens, and settles at Corinth eighteen months. From there he writes to the church he has just planted. 1 Thessalonians assumes the readers remember his coming “in power and in the Holy Spirit” and already know the tradition of the Lord’s coming. 2 Thessalonians follows while the same team — Paul, Silvanus, Timothy — is still together.",
-    sources: ["Acts 17:1–18:11", "1 Thessalonians 1–2", "2 Thessalonians 1:1"] },
+    sources: ["Acts 17:1–18:11", "1 Thessalonians 1–2", "2 Thessalonians 1:1"],
+    views: {
+      critic: "1 Thessalonians ~50–51, usually the earliest NT book. 2 Thessalonians is often dated later or treated as disputed.",
+      habermas: "1 Thessalonians ~50 (sometimes 48): the start of the written Pauline window.",
+      huff: "Corinth, second journey: both letters in the early 50s."
+    } },
 
   { year: 50.2, label: "c. 49–50", title: "Barnabas and Mark to Cyprus", short: "Barnabas", image: "assets/ev-ship.jpg",
     summary: "After the council, Paul and Barnabas divide over John Mark. Barnabas takes Mark to Cyprus; Paul takes Silas through Syria and Cilicia.",
@@ -93,24 +145,81 @@ window.EVENTS = [
     sources: ["Acts 16–21"] },
 
   { year: 55, label: "c. 54–56", title: "1–2 Corinthians", short: "1–2 Cor.", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 55, habermas: 56, huff: 55 },
+    whenLabel: { critic: "c. 53–56", habermas: "c. 55–57", huff: "c. 53–57" },
     summary: "From Ephesus and Macedonia. 1 Corinthians 15 again recites the resurrection appearances, including to Peter and James.",
     account: "Paul’s longest surviving pastoral correspondence with a single church. 1 Corinthians is sent from Ephesus (16:8). Chapter 15 recites the early creed and lists the witnesses. 2 Corinthians, from Macedonia, defends the apostleship after a painful visit. The letters assume a living network: Timothy, Titus, the collection for the saints in Jerusalem.",
-    sources: ["1 Corinthians 15–16", "2 Corinthians 1–2; 8–9", "Acts 19–20"] },
+    sources: ["1 Corinthians 15–16", "2 Corinthians 1–2; 8–9", "Acts 19–20"],
+    views: {
+      critic: "1 Corinthians ~53–54; 2 Corinthians ~55–56. Undisputed Paul.",
+      habermas: "1 Corinthians ~55–57, the letter that carries the 15:3–7 creed.",
+      huff: "Even on later counts, 53–57 — and 1 Corinthians 11 may quote Luke."
+    } },
 
   { year: 57, label: "c. 57", title: "Romans", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 57, habermas: 57, huff: 57 },
+    whenLabel: { critic: "c. 55–58", habermas: "c. 57", huff: "c. 57" },
     summary: "Paul writes to Rome from Corinth, planning to go on to Spain after Jerusalem.",
     account: "The longest surviving Pauline letter. He has not yet been to Rome, but he names a long list of believers already there (Romans 16) and hopes to be sent on to Spain after he has delivered the collection to Jerusalem (15:23–28). Phoebe of Cenchreae is commended as the bearer. Written during the three months in Greece of Acts 20:2–3, on the conservative count.",
-    sources: ["Romans 1:7–15; 15:23–28; 16", "Acts 20:2–3"] },
+    sources: ["Romans 1:7–15; 15:23–28; 16", "Acts 20:2–3"],
+    views: {
+      critic: "Undisputed, from Corinth, c. 55–58. Romans 1:3–4 and 10:9 are often treated as older creedal lines.",
+      habermas: "Inside the 50s Pauline window; 10:9 is one of his early high-Christology creeds.",
+      huff: "Same Corinthian winter as the usual conservative chronology, c. 57."
+    } },
 
   { year: 58, label: "c. 57–59", title: "Paul arrested", short: "Arrested", image: "assets/ev-chains.jpg",
     summary: "Seized in the temple, tried before Felix and Festus, appeal to Caesar. Two years at Caesarea.",
     account: "Acts 21: Paul is taken in the temple on the charge of bringing Gentiles past the barrier. He defends himself before the crowd, before the Sanhedrin, before Felix, and before Festus and Agrippa II. The appeal to Caesar sends him to Rome. Luke’s “we” resumes for the voyage (Acts 27–28). Conservative chronology puts the arrest c. 57 and the Caesarean custody through 59.",
     sources: ["Acts 21–26"] },
 
-  { year: 60, label: "c. 60–62", title: "Prison letters · Luke · Acts", short: "Luke · Acts", book: true, image: "assets/ev-gospel.jpg",
-    summary: "Ephesians, Philippians, Colossians, Philemon from Roman house arrest. Luke–Acts, on the early date, close while Paul is still alive.",
-    account: "Acts ends with Paul in his own hired dwelling at Rome for two years, preaching “with all boldness and without hindrance” (28:30–31). The prison letters fit that house arrest. Luke–Acts, on the early date, can end at chapter 28 because the story has not yet gone further: Paul is alive, the temple still stands in the narrative memory, and the author is a companion. Irenaeus later says Luke recorded what Paul preached (AH 3.1.1).",
-    sources: ["Acts 28:16–31", "Ephesians, Philippians, Colossians, Philemon", "Irenaeus, Against Heresies 3.1.1"] },
+  { year: 60, label: "c. 60–62", title: "Philippians · Philemon", short: "Philippians", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 61, habermas: 61, huff: 61 },
+    whenLabel: { critic: "c. 54–62", habermas: "c. 60–62", huff: "c. 60–62" },
+    summary: "From custody: joy to Philippi, and a private appeal for Onesimus.",
+    account: "Philippians and Philemon are among the letters critics and conservatives both give to Paul. Philippians 1:13 and 4:22 speak of the praetorium and of saints in Caesar’s household. Philemon sends the slave Onesimus back as a brother. On the early Roman date they belong to the house arrest of Acts 28.",
+    sources: ["Philippians 1:12–13; 4:22", "Philemon"],
+    views: {
+      critic: "Undisputed Paul, 54–62, Rome or Ephesus.",
+      habermas: "Inside the seven, before a 62–63 martyrdom.",
+      huff: "Roman house arrest, while Paul is still alive."
+    } },
+
+  { year: 60.2, label: "c. 60–62", title: "Ephesians · Colossians", short: "Ephesians", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 85, habermas: 61, huff: 61 },
+    whenLabel: { critic: "c. 70–90", habermas: "c. 60–62", huff: "c. 60–62" },
+    summary: "Prison letters to Asia. Conservatives keep them as Paul’s; many critics date them after his death.",
+    account: "Colossians names Paul’s chains and a letter to Laodicea. Ephesians, on the conservative reading, is the same captivity, a circular to the Asian churches. Both assume a high view of the church and of Christ’s cosmic place.",
+    sources: ["Ephesians 3:1; 6:20", "Colossians 4:3; 4:16"],
+    views: {
+      critic: "Majority: deutero-Pauline, c. 70–90. A minority still defends Pauline authorship from prison.",
+      habermas: "Treats the seven as the critical core; Ephesians is not in that seven.",
+      huff: "Pauline, from the Roman house arrest, before 64–67."
+    } },
+
+  { year: 60.4, label: "c. 60–62", title: "Luke", short: "Luke", book: true, image: "assets/ev-gospel.jpg",
+    when: { critic: 85, habermas: 85, huff: 58 },
+    whenLabel: { critic: "c. 80–90", habermas: "c. 85", huff: "c. 50s–60s" },
+    summary: "The Gospel dedicated to Theophilus. Irenaeus: Luke recorded what Paul preached.",
+    account: "Luke’s preface claims orderly investigation of eyewitness tradition. Irenaeus AH 3.1.1: Luke, the companion of Paul, wrote down the gospel Paul preached. On the early date the temple’s fall is still future in the narrative world.",
+    sources: ["Luke 1:1–4", "Irenaeus, Against Heresies 3.1.1"],
+    views: {
+      critic: "Usually 80–90, after Mark and after 70.",
+      habermas: "When quoting typical critical averages: about 85.",
+      huff: "Synoptics in the 40s–60s; if 1 Corinthians 11 quotes Luke 22, Luke could be as early as 53."
+    } },
+
+  { year: 62.2, label: "c. 60–62", title: "Acts", short: "Acts", book: true, image: "assets/ev-gospel.jpg",
+    when: { critic: 90, habermas: 85, huff: 62 },
+    whenLabel: { critic: "c. 85–100", habermas: "c. 85", huff: "c. 60–62" },
+    summary: "Volume two to Theophilus. Ends with Paul preaching in Rome, still alive.",
+    account: "Acts 28:30–31: two years in his own hired dwelling, “with all boldness and without hindrance.” No death of Paul or Peter, no fall of Jerusalem. The early date reads that silence as the author’s present.",
+    sources: ["Acts 1:1; 28:30–31"],
+    views: {
+      critic: "Commonly 85–100, after Luke, often after 70.",
+      habermas: "Often ~85 with Luke; few critics put Acts before 65.",
+      huff: "Before 64–67, because Luke never records Peter’s or Paul’s death."
+    } },
 
   { year: 60.5, label: "c. 60–64", title: "Peter and Paul at Rome", short: "Rome", image: "assets/apostle-peter.jpg", kind: "inferred",
     summary: "Irenaeus places Peter and Paul together preaching at Rome; 1 Clement later speaks of their contests in that city.",
@@ -119,19 +228,45 @@ window.EVENTS = [
     caveat: "Acts narrates Paul’s Roman custody; Peter’s presence in the city is the later church’s consistent memory, not a scene in Acts." },
 
   { year: 62, label: "c. 55–65", title: "Mark", book: true, image: "assets/ev-gospel.jpg",
+    when: { critic: 70, habermas: 67, huff: 50 },
+    whenLabel: { critic: "c. 68–72", habermas: "c. 65–70", huff: "c. 40s–60s" },
     summary: "Mark writes Peter’s preaching. Conservative date: before 70, often in the 60s, from Rome.",
     account: "Papias of Hierapolis, as Eusebius copies him (HE 3.39.15): Mark was Peter’s interpreter and wrote down accurately what he remembered of the Lord’s words and deeds, not in order. Irenaeus (AH 3.1.1) places Mark after Peter and Paul’s departure. Clement of Alexandria (via Eusebius HE 2.15; 6.14) has Mark writing at Rome at the request of those who had heard Peter. Conservative dating keeps the book before the fall of the temple.",
-    sources: ["Papias via Eusebius, HE 3.39.15", "Irenaeus, Against Heresies 3.1.1", "Clement of Alexandria via Eusebius, HE 2.15; 6.14"] },
+    sources: ["Papias via Eusebius, HE 3.39.15", "Irenaeus, Against Heresies 3.1.1", "Clement of Alexandria via Eusebius, HE 2.15; 6.14"],
+    views: {
+      critic: "Earliest Gospel, around 70 (often 68–72), near or after the war.",
+      habermas: "Typical critical average he cites: 65–70. A survey he quotes clustered there, with Mark as author and Peter as source.",
+      huff: "With the other Synoptics, 40s–60s, well inside living memory."
+    } },
 
   { year: 62.4, label: "62", title: "James the Just martyred", short: "James the Just", image: "assets/author-james-just.jpg",
     summary: "Josephus: the high priest Ananus has “James, the brother of Jesus who was called Christ,” stoned in Jerusalem.",
     account: "Josephus, Antiquities 20.200: Ananus the Younger, in the interval after Festus’s death and before Albinus arrived, convened the Sanhedrin and brought before it “the brother of Jesus who was called Christ, whose name was James, and certain others,” and delivered them to be stoned. The year is 62. Hegesippus, as Eusebius copies him (HE 2.23), gives a longer Christian account of James’s death at the temple. The New Testament’s pillar of Jerusalem is gone eight years before the city falls.",
     sources: ["Josephus, Antiquities 20.200", "Hegesippus via Eusebius, HE 2.23"] },
 
-  { year: 63, label: "c. 60–70", title: "Matthew · Hebrews", short: "Matthew", book: true, image: "assets/ev-gospel.jpg",
-    summary: "Matthew among the Hebrews. Hebrews before 70, while the temple cult still stands.",
-    account: "Papias: Matthew compiled the logia in the Hebrew language (Eusebius HE 3.39.16). Irenaeus AH 3.1.1: Matthew published a Gospel among the Hebrews in their own tongue while Peter and Paul were at Rome. Origen, via Eusebius HE 6.25, repeats the Hebrew-Matthew tradition. Hebrews argues from a sanctuary still in operation (Heb 8–10) and never mentions the temple’s fall — on the conservative reading, because it has not yet happened.",
-    sources: ["Papias via Eusebius, HE 3.39.16", "Irenaeus, Against Heresies 3.1.1", "Hebrews 8–10"] },
+  { year: 63, label: "c. 60–70", title: "Matthew", book: true, image: "assets/ev-gospel.jpg",
+    when: { critic: 85, habermas: 82, huff: 55 },
+    whenLabel: { critic: "c. 80–90", habermas: "c. 80–85", huff: "c. 40s–60s" },
+    summary: "Matthew among the Hebrews, on Papias and Irenaeus.",
+    account: "Papias: Matthew compiled the logia in the Hebrew language (Eusebius HE 3.39.16). Irenaeus AH 3.1.1: Matthew published a Gospel among the Hebrews in their own tongue while Peter and Paul were at Rome. Origen, via Eusebius HE 6.25, repeats the Hebrew-Matthew tradition.",
+    sources: ["Papias via Eusebius, HE 3.39.16", "Irenaeus, Against Heresies 3.1.1"],
+    views: {
+      critic: "Usually 80–90, after Mark and after 70, for a church still arguing Torah.",
+      habermas: "When using critic dates: about 80–85.",
+      huff: "Synoptics 40s–60s; Irenaeus’s “while Peter and Paul were at Rome” is taken as the 60s."
+    } },
+
+  { year: 63.4, label: "c. 60–70", title: "Hebrews", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 80, habermas: 65, huff: 63 },
+    whenLabel: { critic: "c. 60–90", habermas: "c. 60s", huff: "c. 60–70" },
+    summary: "The sanctuary still stands in the argument (Heb 8–10). Conservative readers put it before 70.",
+    account: "Hebrews never names its author. It reasons from a cult still in operation and never mentions the temple’s fall. On the conservative reading that is because the fall has not happened. The letter already treats Jesus as high priest and the old sacrifices as a shadow.",
+    sources: ["Hebrews 8–10"],
+    views: {
+      critic: "Often 70–90, sometimes earlier; authorship left open.",
+      habermas: "Not in his seven; he does not lean on it for the minimal facts.",
+      huff: "Before 70, while the temple cult still stands."
+    } },
 
   { year: 64, label: "64", title: "Nero’s persecution", short: "Rome burns", image: "assets/ev-fire-rome.jpg",
     summary: "Rome burns. Tacitus: Nero blames the Christians. The first imperial persecution in the city of Peter and Paul.",
@@ -139,19 +274,64 @@ window.EVENTS = [
     sources: ["Tacitus, Annals 15.44"] },
 
   { year: 65, label: "c. 62–64", title: "1 Peter", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 80, habermas: 64, huff: 64 },
+    whenLabel: { critic: "c. 70–90", habermas: "c. 62–64", huff: "c. 62–64" },
     summary: "Peter, through Silvanus, to the elect of the Diaspora, writing as the church comes under Nero’s shadow.",
     account: "The letter names “Peter, an apostle of Jesus Christ,” and says it is written “through Silvanus” (5:12). “She who is in Babylon, chosen together with you, sends you greetings” (5:13) — Babylon as Rome in the conservative reading, while Nero’s fire and the first imperial persecution are at the door. The churches addressed are in Pontus, Galatia, Cappadocia, Asia, and Bithynia, the same Asia where John will later remain.",
-    sources: ["1 Peter 1:1; 5:12–13"] },
+    sources: ["1 Peter 1:1; 5:12–13"],
+    views: {
+      critic: "Often 70–90, from a Petrine circle rather than Peter himself.",
+      habermas: "Not required for the seven; conservative use puts it under Nero.",
+      huff: "Peter, through Silvanus, before or during Nero’s persecution."
+    } },
 
-  { year: 66, label: "c. 64–67", title: "2 Peter · Pastorals · Jude", short: "2 Peter · Jude", book: true, image: "assets/ev-scroll.jpg",
-    summary: "Farewell letters while Peter and Paul still live: 2 Peter, 1–2 Timothy and Titus, and Jude of the Lord’s brothers.",
-    account: "2 Peter presents itself as Peter’s second letter and as a reminder before his “departure” (1:13–15), and it already treats a collection of Paul’s letters as Scripture (3:15–16). 1–2 Timothy and Titus are Paul’s last letters on the conservative count — 2 Timothy in particular as a farewell from custody, naming those who have left and those who remain. Jude of the Lord’s brothers writes as the faith “once for all delivered.” Conservative dates fall before the martyrdoms and before 70.",
-    sources: ["2 Peter 1:12–15; 3:15–16", "2 Timothy 4", "Jude 1"] },
+  { year: 66, label: "c. 64–67", title: "2 Peter", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 120, habermas: 65, huff: 66 },
+    whenLabel: { critic: "c. 100–140", habermas: "c. 64–67", huff: "c. 64–67" },
+    summary: "Peter’s farewell, naming a collection of Paul’s letters as Scripture.",
+    account: "2 Peter presents itself as a second letter and as a reminder before the author’s “departure” (1:13–15). It already treats a collection of Paul’s letters as Scripture (3:15–16). Conservative dates fall before Peter’s death and before 70.",
+    sources: ["2 Peter 1:12–15; 3:15–16"],
+    views: {
+      critic: "Widely dated 100–140, the latest NT book in most critical reconstructions.",
+      habermas: "Not in the seven; his resurrection case does not depend on it.",
+      huff: "Peter’s farewell, written while he still lives, before 70."
+    } },
+
+  { year: 66.3, label: "c. 64–67", title: "Pastorals", short: "Pastorals", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 95, habermas: 63, huff: 66 },
+    whenLabel: { critic: "c. 80–110", habermas: "c. 62–64", huff: "c. 64–67" },
+    summary: "1–2 Timothy and Titus. Conservative: Paul’s last letters. 2 Timothy as a farewell from custody.",
+    account: "2 Timothy names those who have left and those who remain, and asks for the cloak and the parchments. 1 Timothy and Titus order churches and elders. On the conservative count they are Paul’s, before Nero kills him.",
+    sources: ["2 Timothy 4", "1 Timothy 1:1", "Titus 1:1"],
+    views: {
+      critic: "Usually 80–110, from a Pauline school, not from Paul in the 60s.",
+      habermas: "Outside the seven undisputed letters.",
+      huff: "Paul’s last letters, still before 64–67."
+    } },
+
+  { year: 66.6, label: "c. 64–67", title: "Jude", book: true, image: "assets/ev-scroll.jpg",
+    when: { critic: 90, habermas: 65, huff: 66 },
+    whenLabel: { critic: "c. 80–110", habermas: "c. 60s", huff: "c. 64–68" },
+    summary: "Jude of the Lord’s brothers: the faith once for all delivered.",
+    account: "The letter names “Jude, a servant of Jesus Christ and brother of James.” Conservative dates fall before 70. 2 Peter appears to use Jude or to share a source with it.",
+    sources: ["Jude 1"],
+    views: {
+      critic: "Often 80–110, sometimes earlier.",
+      habermas: "Not used in the minimal-facts core.",
+      huff: "Jude of the Lord’s brothers, before 70."
+    } },
 
   { year: 67, label: "c. 64–67", title: "Peter crucified · Paul beheaded", short: "Peter · Paul", image: "assets/ev-cross.jpg",
+    when: { critic: 64, habermas: 63, huff: 66 },
+    whenLabel: { critic: "c. 64", habermas: "c. 62–63", huff: "c. 64–67" },
     summary: "Rome, under Nero. The farewell letters already stand.",
     account: "1 Clement 5, from Rome at the end of the century, holds up Peter and Paul as athletes who bore witness “among us” and went to the place of glory. Tertullian, Prescription 36, says Rome can show the places where the apostles’ blood was shed — Peter under the sword’s equivalent, the cross; Paul a Roman death, the sword. Origen, as Eusebius copies him (HE 3.1), records Peter crucified head-downward at his own request, and Paul beheaded. Nero dies in 68; the tradition places both deaths in his last years.",
-    sources: ["1 Clement 5", "Tertullian, Prescription 36", "Origen via Eusebius, HE 3.1"] },
+    sources: ["1 Clement 5", "Tertullian, Prescription 36", "Origen via Eusebius, HE 3.1"],
+    views: {
+      critic: "Nero, after the fire of 64, is the usual window; some put Paul in 62.",
+      habermas: "Often 62–63, to close the Pauline letter window.",
+      huff: "64–67, still under Nero, after the fire."
+    } },
 
   { year: 68, label: "c. 60–80", title: "Andrew · Philip · Thomas", short: "Three missions", image: "assets/ev-ship.jpg",
     summary: "The early notices are the mission fields, not the later martyr-acts.",
@@ -184,9 +364,16 @@ window.EVENTS = [
     sources: ["Josephus, Jewish War, preface; 5–7"] },
 
   { year: 85, label: "c. 80–95", title: "John · 1–3 John", short: "John", book: true, image: "assets/ev-gospel.jpg",
+    when: { critic: 95, habermas: 95, huff: 92 },
+    whenLabel: { critic: "c. 90–110", habermas: "c. 95", huff: "c. 90s" },
     summary: "The aged apostle at Ephesus. Gospel and letters in the last decades of the first century, after the temple’s fall.",
     account: "Irenaeus, Against Heresies 3.1.1: “Afterwards, John, the disciple of the Lord, who also had leaned upon his breast, did himself publish a Gospel during his residence at Ephesus in Asia.” AH 3.3.4: the church at Ephesus was founded by Paul, and John remained among them until the times of Trajan. The three letters belong with that Asian residence. Conservative dating puts the Gospel after 70, in John’s old age.",
-    sources: ["Irenaeus, Against Heresies 3.1.1; 3.3.4"] },
+    sources: ["Irenaeus, Against Heresies 3.1.1; 3.3.4"],
+    views: {
+      critic: "Gospel often 90–110; letters nearby. A minority pushes into the second century.",
+      habermas: "Typical date he cites for John: about 95.",
+      huff: "John late, in the 90s — unlike his early Synoptics."
+    } },
 
   { year: 90, label: "c. 80–100", title: "Polycarp hears John", short: "Polycarp hears", image: "assets/src-polycarp.jpg", kind: "inferred",
     summary: "In Asia, while John still remains at Ephesus, the young Polycarp hears the apostle and others who had seen the Lord.",
@@ -200,9 +387,16 @@ window.EVENTS = [
     caveat: "Polycarp’s own letter to the Philippians does not name John. The chain is Irenaeus’s testimony, written while Polycarp’s memory was still public in Asia and in Gaul." },
 
   { year: 95, label: "c. 95", title: "Revelation", book: true, image: "assets/ev-patmos.jpg",
+    when: { critic: 95, habermas: 95, huff: 95 },
+    whenLabel: { critic: "c. 90–95", habermas: "c. 95", huff: "c. 95" },
     summary: "Irenaeus: the vision seen “almost in our own generation, at the end of Domitian’s reign.” John on Patmos.",
     account: "Revelation 1:9: “I, John, your brother and companion in the tribulation… was on the island called Patmos on account of the word of God.” Irenaeus, Against Heresies 5.30.3, discussing the number of the beast: the vision “was seen not long ago, but almost in our own generation, at the end of Domitian’s reign.” Domitian dies in 96. Victorinus and Eusebius follow Irenaeus on the date. Conservative tradition then has John return to Ephesus after Domitian’s death.",
-    sources: ["Revelation 1:9", "Irenaeus, Against Heresies 5.30.3", "Eusebius, HE 3.18; 3.20; 3.23"] },
+    sources: ["Revelation 1:9", "Irenaeus, Against Heresies 5.30.3", "Eusebius, HE 3.18; 3.20; 3.23"],
+    views: {
+      critic: "Usually the end of Domitian, c. 90–95; a minority prefers Nero’s 60s.",
+      habermas: "Follows the Irenaean date around 95.",
+      huff: "Same neighborhood: Patmos at the end of Domitian."
+    } },
 
   { year: 96, label: "c. 96", title: "1 Clement", book: true, image: "assets/src-clement-rome.jpg",
     summary: "Rome writes to Corinth, naming Peter and Paul’s contests and “the letter of the blessed Paul.” Within living memory of the apostles.",
