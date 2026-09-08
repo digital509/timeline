@@ -341,15 +341,20 @@ window.EVENTS = [
     account: "Eusebius, Church History 8: in the nineteenth year of Diocletian an edict is posted to tear down the churches and burn the Scriptures. Eusebius writes as one who saw the houses of prayer thrown down from top to bottom and the holy Scriptures committed to the flames in the marketplaces. The persecution runs, with pauses, until 311. The books hunted are the same Gospels and letters Irenaeus had named a hundred and twenty years before.",
     sources: ["Eusebius, HE 8.2; 8.2–6"] },
 
-  { year: 312, label: "312", title: "Milvian Bridge", short: "Milvian", image: "assets/ev-labarum.jpg",
-    summary: "Constantine defeats Maxentius at the Tiber. The labarum enters the public story of the empire.",
-    account: "Eusebius, Life of Constantine 1.28–31, tells of the sign Constantine saw before the battle at the Milvian Bridge, and of the standard made from it. Lactantius, On the Deaths of the Persecutors 44, gives a related account of the chi-rho on the soldiers’ shields. However the vision is weighed, 28 October 312 is the political turn: the emperor who will legalize the church wins the West.",
-    sources: ["Eusebius, Life of Constantine 1.28–31", "Lactantius, On the Deaths of the Persecutors 44"] },
+  { year: 312, label: "312", title: "Constantine at the Milvian Bridge", short: "Constantine", image: "assets/ev-labarum.jpg",
+    summary: "Constantine defeats Maxentius at the Tiber. He has the chi-rho marked on the soldiers’ shields. The persecuting empire begins to change hands.",
+    account: "28 October 312. Lactantius, On the Deaths of the Persecutors 44: Constantine is directed in a dream to mark the heavenly sign of God on the shields — the chi-rho — and he defeats Maxentius at the Milvian Bridge. Eusebius, Life of Constantine 1.28–31, writing later, tells of a cross of light in the sky with the words “by this conquer,” and of the labarum made from the sign. However the vision is weighed, this is Constantine’s victory in the West, the first Roman emperor to fight under a Christian monogram.",
+    sources: ["Lactantius, On the Deaths of the Persecutors 44", "Eusebius, Life of Constantine 1.28–31"] },
 
-  { year: 313, label: "313", title: "Milan", image: "assets/ev-labarum.jpg",
-    summary: "Constantine and Licinius: the church is legal in the empire.",
-    account: "Lactantius, On the Deaths of the Persecutors 48, and Eusebius, HE 10.5, preserve the letter of 313: Christians and all others are to have free power to follow their religion. Confiscated buildings are to be restored. The age in which the ordinary lot of the churches was the magistrate and the fire begins to close.",
+  { year: 313, label: "313", title: "Constantine · Edict of Milan", short: "Milan", image: "assets/ev-labarum.jpg",
+    summary: "Constantine and Licinius restore legal standing to the church. Confiscated buildings are to be given back.",
+    account: "Lactantius, On the Deaths of the Persecutors 48, and Eusebius, HE 10.5, preserve the letter issued in 313 after Constantine and Licinius met: Christians and all others are to have free power to follow their religion; places taken from the churches are to be restored. It is not yet an established state church. It is the end of the age in which the ordinary lot of the churches was the magistrate and the fire. Constantine now rules the West as a patron of the church he had marked on his shields the year before.",
     sources: ["Lactantius, On the Deaths of the Persecutors 48", "Eusebius, HE 10.5"] },
+
+  { year: 315, label: "c. 313–318", title: "Constantine’s Lateran", short: "Lateran", image: "assets/ev-labarum.jpg",
+    summary: "The emperor gives the church a basilica in Rome, on the Lateran, where the prefect of the city had sat.",
+    account: "After the victory in the West, Constantine endows the church in Rome with the basilica that will be called St John Lateran — the first great public church in the capital, raised on the site of the Lateran palace. Eusebius, Life of Constantine 3, records the emperor’s church-building more fully in the East; the Roman gift is the tradition of the Liber Pontificalis and of the building itself. A persecuted assembly that had met in houses now has an imperial nave inside the city of Peter and Paul.",
+    sources: ["Eusebius, Life of Constantine 3.25–40", "Liber Pontificalis, Life of Sylvester"] },
 
   { year: 324, label: "c. 313–325", title: "Eusebius, Church History", short: "Eusebius", book: true, image: "assets/src-eusebius.jpg",
     summary: "Caesarea. The library that keeps Papias, Hegesippus, Dionysius, the letter to Florinus, Polycrates, and the rest from dropping out of the line.",
@@ -357,7 +362,7 @@ window.EVENTS = [
     sources: ["Eusebius, Church History"] },
 
   { year: 325, label: "325", title: "Council of Nicaea", short: "Nicaea", image: "assets/icon-nicaea.jpg",
-    summary: "Bishops from across the empire meet under Constantine. The creed concerning the Son is settled.",
-    account: "Eusebius, Life of Constantine 3, and the later historians describe the council: more than two hundred bishops, the emperor present, the question of the Son’s relation to the Father. The creed is issued, with anathemas. The age of public martyrdom as the church’s ordinary lot is over. The Gospels, the letters, and the memory of the apostles are by then the church’s received inheritance.",
+    summary: "Constantine summons the bishops. The creed concerning the Son is settled.",
+    account: "Eusebius, Life of Constantine 3: Constantine, now master of the whole empire after Licinius’s fall in 324, gathers the bishops at Nicaea. More than two hundred attend; the emperor is present. The question is the Son’s relation to the Father. The creed is issued, with anathemas. The age of public martyrdom as the church’s ordinary lot is over. The Gospels, the letters, and the memory of the apostles are by then the church’s received inheritance.",
     sources: ["Eusebius, Life of Constantine 3", "The creed of Nicaea"] }
 ];
