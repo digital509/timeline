@@ -17,10 +17,11 @@
   let pxPerYear = PX_DEFAULT;
   let items = [];
   let layoutRaf = 0;
-  let era = "huff";
+  let era = "early";
   try {
     const saved = localStorage.getItem("timeline-era");
-    if (saved === "critic" || saved === "habermas" || saved === "huff") era = saved;
+    if (saved === "critic" || saved === "habermas") era = "critic";
+    if (saved === "huff" || saved === "early") era = "early";
   } catch (err) {}
 
   function isCompact() {
@@ -31,13 +32,19 @@
     return isCompact() ? PX_MAX_COMPACT : PX_MAX_DESKTOP;
   }
 
+  function whenKey() {
+    return era === "critic" ? "critic" : "huff";
+  }
+
   function yearOf(ev) {
-    if (ev.when && typeof ev.when[era] === "number") return ev.when[era];
+    const key = whenKey();
+    if (ev.when && typeof ev.when[key] === "number") return ev.when[key];
     return ev.year;
   }
 
   function labelOf(ev) {
-    if (ev.whenLabel && ev.whenLabel[era]) return ev.whenLabel[era];
+    const key = whenKey();
+    if (ev.whenLabel && ev.whenLabel[key]) return ev.whenLabel[key];
     return ev.label;
   }
 
@@ -422,7 +429,7 @@
   });
 
   function setEra(next, keepYear) {
-    if (next !== "critic" && next !== "habermas" && next !== "huff") return;
+    if (next !== "critic" && next !== "early") return;
     const y = keepYear != null
       ? keepYear
       : YEAR0 + (scroller.scrollLeft + scroller.clientWidth * 0.4 - PAD) / pxPerYear;
